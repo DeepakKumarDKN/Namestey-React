@@ -1,0 +1,19 @@
+{
+  "name": "igniting-the-app-05_08_23",
+  "version": "1.0.0",
+  "description": "Chapter Two Igniting The App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepakKumarDKN/Namestey-React.git#main"
+  },
+  "author": "Akshay Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeepakKumarDKN/Namestey-React/issues"
+  },
+  "homepage": "https://github.com/DeepakKumarDKN/Namestey-React/tree/main#readme"
+}
