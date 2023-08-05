@@ -6,7 +6,7 @@ heading.innerHTML = "Namestey EveryOne"
 
 
 
-// creating using react
+// creating using pure react
  
 const headingTwo = React.createElement(
     'div',
@@ -14,5 +14,14 @@ const headingTwo = React.createElement(
     React.createElement('h1',{},'hello how are you Guys')
 )
 
+
+const headingThree = React.createElement(
+    'div',
+    {},
+    React.createElement('h1',{id:'heading-one'},'Heading One'),
+    React.createElement('h2',{id:'heading-two'},'Heading Two')
+)
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(headingTwo)
+root.render(headingThree)
+
+

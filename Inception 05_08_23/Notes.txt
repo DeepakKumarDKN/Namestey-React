@@ -91,3 +91,16 @@ root.render(parent)
 // and that object/element is being passed into render here it convert into HTML
 // the render is finally responsible to convert it into HTML and put if off to the dom
 // there will be only one root and one render method in an Application.
+// ReactDOM is responsible for all DOM Operations.
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+The difference between upper one and the lower one is the lower one is the minified version.
+and it is much more optimize for production use. the seie is also less as comapred to the upper one. 
+but still we neer use cnd link in our code to build reaat app we haev to install react for that which 
+we will learn later
+
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
