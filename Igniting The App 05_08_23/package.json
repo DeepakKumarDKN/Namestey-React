@@ -2,7 +2,6 @@
   "name": "igniting-the-app-05_08_23",
   "version": "1.0.0",
   "description": "Chapter Two Igniting The App",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },

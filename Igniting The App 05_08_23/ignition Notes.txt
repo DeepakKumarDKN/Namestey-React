@@ -57,12 +57,12 @@ There are two types of dependencies/packages we can install
 1. dev dependencies
 2. normal dependencies 
 
-here i am install parcel but i want the de dependencies
+here i am install parcel but i want the dev dependencies
 
 dev dependencies mean it is generally required in a development phase /development environment
 normal dependencies are used in production 
 
-here i am install parcel from the npm as soon as it got install we get some new files callled 
+here i install parcel from the npm as soon as it got install we get some new files callled 
 package-lock.json and node_modules
 
 package-lock.json
@@ -234,3 +234,16 @@ and parcel will build all those production files into the dist folder
 .parcel-cache should be put in our gitignore
 because anything which can be auto generated/re-generated can be put into .gitignore
 
+* Hot Module Replacement: 
+This is done by parcel it mean whenever we are doing any changes it keeps track of all the changes are being made 
+it keeps the track of all the files we are updating and then it automatically update the browser during runtime without
+needing of refresing the whole page it just imporve the user experience.
+
+any changes are being made if we are making any CSS changes that also will be applied automatically via HMR.
+
+* File Watcher:
+it will tell us in which file we are doing the change not only file in which module i hae done the changes 
+with the helo of fileWatcher. Filewatchar is written in c++
+
+so if wehave done any changes to index.html then due to the File Watcher it will get to know that yes some changes are being made
+in the index.html and all these are being done by parcel these are one of the pluspoint of using parcel Bundler.
