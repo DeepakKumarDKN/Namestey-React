@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/DeepakKumarDKN/Namestey-React/issues"
   },
-  "homepage": "https://github.com/DeepakKumarDKN/Namestey-React/tree/main#readme"
+  "homepage": "https://github.com/DeepakKumarDKN/Namestey-React/tree/main#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
