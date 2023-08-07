@@ -14,9 +14,20 @@ as compared to the Parcel.
 We Need it because it does a lot of things for us behind the scenes  such as minifying, optimizing, 
 bundling, host our file,it cleans our code etc etc. Parcel build's a server for us which 
 support Hot Module Replacement that mean as soon as we do some changes in our code file it 
-quickly do the changes rebilds it and send it to the browser 
+quickly do the changes rebuilds it and send it to the browser 
 
 It is very Easy as Compared to the Webpack because it doesnot need configuration. Zero Configuration
+
+A bundler is able to compress our code.
+
+It does the minification by saving the longer one variable in the shorter ones to save some space.
+for example doctor is repleced with d.
+
+Make your code as small as possible.
+
+If we have a function that is never used, it will detect that and remove that particular function 
+
+
 
 ```
 ### What is the diffrence between  dependencies and devDependencies ?
@@ -129,4 +140,32 @@ when it comes to building an optimized codebase Tree Shaking is must required as
 reduce the bundle seize of the application. The packages wgich we have installed or the dependencies 
 which we have installed in our application can result in laggy performance application it can make slow
 
+```
+### What is .gitignore ? What should we add and not add into git ?
+
+```
+This tells us what should we add into our project and what to not. if we want that this is a very long file 
+and there is no need of adding this one to our project because it may takes a lot of space so we can add those 
+particular files into our .gitignore file.
+
+for example:
+lets talk about node modules no need of adding node_modules into our git repositry so i will obviously make a 
+.gitigbore file and will add node_modules into it but not only node_modules which ever file we think that not
+necessary we can add those files into .gitignore
+```
+
+### what is node_modules is it a good idea to push that into git ?
+
+```
+node_modules is a collection of packages with its dependencies, its just like a database it contain the actual data of the 
+dependencies that our project need. 
+
+we can find a lot of packages inside it/ modules inside it suppose we are using some module and by mistake we delete 
+the node_modules folder we will get an error because it will not be able to locate the modules we have imported in our project. 
+
+when we install something (npm install) then it will download those things from the web and copied it into the node_modules
+folder and we can use them by importing them. 
+
+no it's not a good idea to push that into git because we can get the node modules autopmatically only by typing the 
+command npm install and its is also a very large file so its will take a lot of space so its not required.
 ```

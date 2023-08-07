@@ -247,3 +247,11 @@ with the helo of fileWatcher. Filewatchar is written in c++
 
 so if wehave done any changes to index.html then due to the File Watcher it will get to know that yes some changes are being made
 in the index.html and all these are being done by parcel these are one of the pluspoint of using parcel Bundler.
+
+
+* when i type [npx parcel index.html] at that time it create a  faster development version of our 
+project and serves it to the server
+
+* when i type [npx parcel build index.html] at that time it create a production build for us 
+it will create a lot of things , it will minify things for us and push it into the dist folder
+so all the production files are being pushed into dist folder.
