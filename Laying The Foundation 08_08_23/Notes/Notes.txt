@@ -1,0 +1,18 @@
+* Command to bring npm to our project : - npm init
+* Doing npm init will bring us package.json to our project
+* There two type of dependency 
+    normal dependency : 
+    dev dependency : we need it in development phase/ development environment only.
+
+* Browser List : This help us transform our code and make it compatible so that older version 
+browser can understand it.
+
+"browserslist" : [
+    "Last 2 Chrome Versions"
+]
+this doesn't mean that it will work only on those two versions , this actually mean it will work on
+other version but it will definitely work on last two versions of chrome.
+
+* Babel converts the newer code to older code.
+* Our modern Javascript (ES6) is converted into older Javascript and that is known as polyfill.
+* we dont have to write polyfill babel does that for us.
