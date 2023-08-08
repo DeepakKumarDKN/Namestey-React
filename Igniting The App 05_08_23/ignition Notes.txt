@@ -255,3 +255,9 @@ project and serves it to the server
 * when i type [npx parcel build index.html] at that time it create a production build for us 
 it will create a lot of things , it will minify things for us and push it into the dist folder
 so all the production files are being pushed into dist folder.
+
+* Transitive dependency
+-----------------------
+when we want to create a prodution ready application it does a lot of thing such as minification, code cleaning
+hot module replacement, tree shaking, so to do all those things we need a lot of packages/dependencies because react 
+itself cannot do it and those dependencies are also dependent on other dependencies.
