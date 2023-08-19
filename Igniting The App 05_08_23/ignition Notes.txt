@@ -31,7 +31,7 @@ to production.
 Webpack is also a bundler and it is used when we are creating an app by writting
 npx create-react-app appname behind the scenes it is using webpack bundler
 
-all the bundler almost do the same thing behind the scenes the way or working may be diffrent.
+all the bundler almost do the same thing behind the scenes the way or working may be different.
 
 Command for Adding node package manager to an project 
 ------------------------------------------------------

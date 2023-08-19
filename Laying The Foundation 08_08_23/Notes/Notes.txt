@@ -31,3 +31,4 @@ npx parcel index.html
 =======
 * we dont have to write polyfill babel does that for us.
 >>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
+
