@@ -4,8 +4,11 @@
   "description": "Laying The Foundation Lecture 3",
   "main": "App.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "parcel index.html",
     "build": "parcel build index.html",
+=======
+>>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
     "test": "jest"
   },
   "repository": {
@@ -19,8 +22,12 @@
   },
   "homepage": "https://github.com/DeepakKumarDKN/Namestey-React#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "parcel": "^2.9.3",
     "process": "^0.11.10"
+=======
+    "parcel": "^2.9.3"
+>>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
   },
   "dependencies": {
     "react": "^18.2.0",

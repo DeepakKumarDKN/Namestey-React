@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 * Command to bring npm to our project : - npm init.
+=======
+* Command to bring npm to our project : - npm init
+>>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
 * Doing npm init will bring us package.json to our project
 * There two type of dependency 
     normal dependency : 
@@ -15,6 +19,7 @@ other version but it will definitely work on last two versions of chrome.
 
 * Babel converts the newer code to older code.
 * Our modern Javascript (ES6) is converted into older Javascript and that is known as polyfill.
+<<<<<<< HEAD
 * we dont have to write polyfill babel does that for us.
 
 *Tree Shaking mean removing unwanted code supoose we are using a library which have 5 function but 
@@ -23,3 +28,6 @@ three functions.
 
 command to run the project 
 npx parcel index.html
+=======
+* we dont have to write polyfill babel does that for us.
+>>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
