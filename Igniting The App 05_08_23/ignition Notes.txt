@@ -13,7 +13,7 @@ manager, it manages packages, works as a node package manager.
 if we want to get npm into our app then for that we have to write a command called 
 npm init
 
-npm init -y will escape a lot of things so its better to got for npm init.
+npm init -y will escape a lot of things so its better to go for npm init.
 
 package.json is the thing which we are getting because of npm. npm init will get us 
 package.json file.
@@ -21,15 +21,15 @@ package.json file.
 npm is the standard repositry for all the packages, any package we need to include in your 
 project we can use npm.
 
-and sometime these package are known as dependencies and the most important dependencies is known an bundler.
+and sometime these package are known as dependencies and the most important dependencies is known as bundler.
 
 Bundler
 -------
-Bunder basically bundles our app it packages our apps perfectly so that it can be shipped 
+Bundler basically bundles our app it packages our apps perfectly so that it can be shipped 
 to production.
 
-Webpack is also a budeler and it is used when we are creating ap app by writting
-npx create-react-app behind the scenes it is using webpack bundler
+Webpack is also a bundler and it is used when we are creating an app by writting
+npx create-react-app appname behind the scenes it is using webpack bundler
 
 all the bundler almost do the same thing behind the scenes the way or working may be diffrent.
 
@@ -98,25 +98,24 @@ React Dom Install
 --------------------------------------------------------------------
 suppose we have some mojor update 3.3.8 and we have a minor update 2.9.4
 if we have used carat then automatically it will go for the minor version which is
-2.9.4, i mean if we will put carat parcel will automatically update its version and that too for 
-the minor version 
+2.9.4, i mean if we will put carat parcel will automatically update its  minor version 
 
-but if we use ~ then automatically it will for got the major version which is 
+but if we use ~ then automatically it will for the major version which is 
 3.3.8
 
 node_modules
 --------------
 it contains all the code that we fetched from npm, it is kind of database it contains the
-actual data of the dependies of those packages that our project need.
+actual data of the dependencies of those packages that our project need.
 
 Every dependency will have its own package.json so we dont have one package.json in
-our project.here in this projecti have installed pacel so parcel has its own package.json
+our project.here in this project I have installed parcel so parcel has its own package.json
 as well as it has its own dependency.
 
 every package have its own dependency, every libraries has its own package.json this is 
 known as transitive dependency.
 
-node modules is a collcetion of packages with its dependencies.
+node modules is a collection of packages with its dependencies.
 
 no need of uploading or pushing node modules to your github repositry because its a very long files and its not needed
 but anyways we will get that node_modules automatically when i will run a command npm install
@@ -225,7 +224,7 @@ browser.
 
 .dist folder keeps the files minified for us.
 when we run the command npx parcel index.html at that time it create an faster 
-development version of the project and serves it on the server. 
+development version of the project and serv+es it on the server. 
 
 but when i want tell parcel to make a production build by using build command
 npx parcel build index.html , it will create a lot of things it will minify your file 
@@ -255,3 +254,9 @@ project and serves it to the server
 * when i type [npx parcel build index.html] at that time it create a production build for us 
 it will create a lot of things , it will minify things for us and push it into the dist folder
 so all the production files are being pushed into dist folder.
+
+* Transitive dependency
+-----------------------
+when we want to create a prodution ready application it does a lot of thing such as minification, code cleaning
+hot module replacement, tree shaking, so to do all those things we need a lot of packages/dependencies because react 
+itself cannot do it and those dependencies are also dependent on other dependencies.

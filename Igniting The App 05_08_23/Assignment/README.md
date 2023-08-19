@@ -160,7 +160,7 @@ necessary we can add those files into .gitignore
 node_modules is a collection of packages with its dependencies, its just like a database it contain the actual data of the 
 dependencies that our project need. 
 
-we can find a lot of packages inside it/ modules inside it suppose we are using some module and by mistake we delete 
+we can find a lot of packages inside it/ modules inside it, suppose we are using some module and by mistake we delete 
 the node_modules folder we will get an error because it will not be able to locate the modules we have imported in our project. 
 
 when we install something (npm install) then it will download those things from the web and copied it into the node_modules
