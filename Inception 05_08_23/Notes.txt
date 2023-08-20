@@ -7,7 +7,7 @@ cdn:
 content delivery networks, so cdn is the place where the react library is hoisted 
 so we just fetching that into our code using CDN. 
 
-cdn Link for React 
+cdn Link for React  
 -------------------
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -69,7 +69,7 @@ Benefits Of Uisng CDN:
 3. Increasing Content Aailability and redudancy.
 4. Improving Website Security. 
 
-Follow This Link Fior More Info: 
+Follow This Link For More Info: 
 https://www.cloudflare.com/en-gb/learning/cdn/what-is-a-cdn/
 
 Code Explanation 
@@ -87,7 +87,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(parent)
 
 // here parent is an object and that Object is the react element.
-// React.createElement is creating an object
+// React.createElement is creating an   
 // and that object/element is being passed into render here it convert into HTML
 // the render is finally responsible to convert it into HTML and put if off to the dom
 // there will be only one root and one render method in an Application.
