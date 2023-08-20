@@ -107,3 +107,24 @@ we will learn later
 
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+
+Important Note:
+---------------
+React will always override those things whatever we had inside the root to whatever we will pass inside 
+the render.
+
+for example inside the root we have four h1 tag like 
+<div id="root">
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+</div>
+
+connt parent = React.createElement(h1,{},'Namestey React')
+const root = ReactDom.createRoot(document.getElementById('root'))
+root.render(parent)
+
+so what will happen here the output we will see inside the browser is Namestey React everyting will get override
+React will override.
