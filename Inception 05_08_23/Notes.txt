@@ -89,9 +89,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(parent)
 
 // here parent is an object and that Object is the react element.
-// React.createElement is creating an   
+// React.createElement is creating an object/element
 // and that object/element is being passed into render here it convert into HTML
 // the render is finally responsible to convert it into HTML and put if off to the dom
+
 // there will be only one root and one render method in an Application.
 // ReactDOM is responsible for all DOM Operations.
 
