@@ -23,10 +23,12 @@ dom operations with the help of this file we can modify the react-dom (document 
 
 Why there are two files.
 -------------------------
-There are two files because react doesnot only work on browsers it also work in mobile phones 
+There are two files because react doesnot only limited to browsers it also work in mobile phones 
 we have heard about react-native we can create interface for mobile using react-native.
 
-so react is used in mobiles as well as in browsers and that is why there are two files.
+one is react@18 that means we are using react latest version that is React 18, and there
+is something called rect-dom dom means the web version of react, the first file is the core
+verson of react and the second file we can do changes to our DOM
 
 
 creating an element in React 
@@ -97,8 +99,8 @@ root.render(parent)
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 The difference between upper one and the lower one is the lower one is the minified version.
-and it is much more optimize for production use. the seie is also less as comapred to the upper one. 
-but still we neer use cnd link in our code to build reaat app we haev to install react for that which 
+and it is much more optimize for production use. the seize is also less as comapred to the upper one. 
+but still we need to  use cdn link in our code to build react app we have to install react for that which 
 we will learn later
 
 
