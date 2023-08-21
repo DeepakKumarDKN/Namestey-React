@@ -212,7 +212,7 @@ npm install react
 here i am not writting -D because i want to install in 
 my global environment as well.
 
-. react do  install command 
+. react dom  install command 
 npm install react-dom or npm i react-dom (both are same)
 
 . ingnite our app command
