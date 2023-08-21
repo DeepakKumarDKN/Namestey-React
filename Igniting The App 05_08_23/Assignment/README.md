@@ -49,8 +49,8 @@ npm install -D package_name
 ```
 npx mean Node Packgage Execute. it helps in executing, it comes along with npm 
 i mean when we install npm then automatically npx will get installed. 
-It is a Node Package runner than can execute any package from npm 
-registry wityhout even installing it that package.
+It is a Node Package runner that can execute any package from npm 
+registry wit+hout even installing it that package.
 ```
 
 ### what is the diffrence between package.json and package-lock.json
@@ -114,7 +114,7 @@ we dont need all of them we just need a few of them
 3. Tree Shaking
 4. Bundling
 5. Compressing
-   
+`
 ```  
 Hot Module Replacement
 -----------------------
@@ -137,7 +137,7 @@ Tree Shaking
 It is a concept by which we can eliminate the Dead Code or unused code from our project.
 
 when it comes to building an optimized codebase Tree Shaking is must required as it can 
-reduce the bundle seize of the application. The packages wgich we have installed or the dependencies 
+reduce the bundle seize of the application. The packages which we have installed or the dependencies 
 which we have installed in our application can result in laggy performance application it can make slow
 
 ```
@@ -150,8 +150,8 @@ particular files into our .gitignore file.
 
 for example:
 lets talk about node modules no need of adding node_modules into our git repositry so i will obviously make a 
-.gitigbore file and will add node_modules into it but not only node_modules which ever file we think that not
-necessary we can add those files into .gitignore
+.gitignore file and will add node_modules into it but not only node_modules which ever file we think that is 
+not necessary we can add those files into .gitignore
 ```
 
 ### what is node_modules is it a good idea to push that into git ?

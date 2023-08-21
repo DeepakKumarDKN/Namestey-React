@@ -187,7 +187,7 @@ all the libraries, utilities, packages comes from npm.
 
 React doesn't making our app first its just make to an extent but there are lot of other 
 things are also required which makes our app first , a lot of other packages are needed 
-to make our app first.
+to make our app first. 
 
 ^  : carat sign will always update to minor version
 ~  : tilde sign will always update to major version 
