@@ -170,7 +170,7 @@ const heading = React.createElement(
 Q) Why do we need npm 
 A) Because a react app is powered by a lot of things, a lot of packages suppose we have to 
 minify it  or we have to optimize it or we have to bundle it so for that we need a lot of packages 
-only react cannot do that for us so for that we need a lot of helper packages and we will get all that from npm.
+only react cannot do that for us, so for that we need a lot of helper packages and we will get all that from npm.
 
 . npm install -D parcel 
 command to install parcel as dev dependencies
@@ -210,7 +210,7 @@ our packaged wre being installed.
 . react install command:
 npm install react 
 here i am not writting -D because i want to install in 
-my global enironment as well.
+my global environment as well.
 
 . react do  install command 
 npm install react-dom or npm i react-dom (both are same)
@@ -241,7 +241,7 @@ needing of refresing the whole page it just imporve the user experience.
 any changes are being made if we are making any CSS changes that also will be applied automatically via HMR.
 
 * File Watcher:
-it will tell us in which file we are doing the change not only file in which module i hae done the changes 
+it will tell us in which file we are doing the change not only file in which module i have done the changes 
 with the helo of fileWatcher. Filewatchar is written in c++
 
 so if wehave done any changes to index.html then due to the File Watcher it will get to know that yes some changes are being made

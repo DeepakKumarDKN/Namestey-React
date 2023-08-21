@@ -47,10 +47,10 @@ npm install -D package_name
 ```
 ### What is npx ?
 ```
-npx mean Node Packgage Execute. it helps in executing, it comes along with npm 
+npx mean Node Package Execute. it helps in executing, it comes along with npm 
 i mean when we install npm then automatically npx will get installed. 
 It is a Node Package runner that can execute any package from npm 
-registry wit+hout even installing it that package.
+registry without even installing that package.
 ```
 
 ### what is the diffrence between package.json and package-lock.json
