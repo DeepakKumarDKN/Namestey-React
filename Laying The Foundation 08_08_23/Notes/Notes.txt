@@ -80,7 +80,7 @@ const heading = (
 
 💦Functional Component
 ------------------------
-its just like an normal arrow function and it always returns some JSX Code
+its just like an normal javascript function which always returns some javascript code.
 Syntax: 
 
 const HeadingComponent = () =>{
@@ -93,7 +93,9 @@ const HeadingComponent = () =>{
 
 writting the same function without return
 ------------------------------------------
-const HeadingComponent2 = () => (<h1>This is React Functional Component</h1>)
+const HeadingComponent2 = () => (
+    <h1>This is React Functional Component</h1>
+)
 
 🧡Important Note: 
 
@@ -136,7 +138,7 @@ const CourseComponent = () =>(
 
 const HeadingComponent = () =>(
         <>
-            <CourseComponent /> 🎈 --- here i am using another component inside an component
+            <CourseComponent /> 🎈--- here i am using another component inside an component
 
             <h1 className = "functional_component">Functional Component 🧡</h1>
             <p>Look at the code file to see how functional Componet is written</p>
