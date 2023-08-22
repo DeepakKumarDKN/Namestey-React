@@ -18,7 +18,7 @@ const create_element = React.createElement(
 
 // How to create an JSX 
 
-const heading = (
+const CourseComponent = () =>(
     <>
         <h1>💙 Namestey React 💛</h1>
         <ul>
@@ -33,16 +33,14 @@ const heading = (
 
 // React Functional Component 
 
-const HeadingComponent = () =>{
-    return(
+const HeadingComponent = () =>(
         <>
-            <h1>This is React Functional Component</h1>
+            <CourseComponent />
+            <h1 className = "functional_component">Functional Component 🧡</h1>
+            <p>Look at the code file to see how functional Componet is written</p>
+
         </>
     )
-}
-const HeadingComponent2 = () => (<h1>This is React Functional Component</h1>)
-
-
 
 const root = ReactDom.createRoot(document.getElementById('root'))
-root.render(heading)
+root.render(<HeadingComponent />)
