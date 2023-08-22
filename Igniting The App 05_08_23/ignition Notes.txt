@@ -195,6 +195,12 @@ to make our app first.
 for example if i have installed packages called parcel and in the package.json if i write like inside (double curly braces)
 "2.8.4" then it will not take any updates for his packges 
 
+example for carat and tilde : 
+----------------------------
+suppose there is a minor update 2.8.3 and there is a major update 3.2.1 if i will put carat sign (^) then parcel 
+will automatically update its version to 2.8.3 and if i will put tilde sign(~) then  parcel will automatically 
+update its version to 3.2.1 becaue tilde always gets update to the major one.
+
 its good to use carat we can also use tilde instead of carat but carat is
 good.
 
@@ -203,9 +209,9 @@ is dependant on something and parcel is one of the dependencies
 
 .node_modules is a kind of database for npm, whenever we install something it gets installed inside the
 node_modules. 
-.in node_modules we can find a lot of packages/dependencies and how do we get so many packages 
-when we are installing parcel bundler the time being taken to instal parcel in between that time all
-our packaged wre being installed.
+node_modules contain a lot of packages/dependencies and how do we get so many packages 
+when we are installing parcel bundler the time being taken to install parcel in between that time all
+our packaged are being installed.
 
 . react install command:
 npm install react 
@@ -224,7 +230,7 @@ browser.
 
 .dist folder keeps the files minified for us.
 when we run the command npx parcel index.html at that time it create an faster 
-development version of the project and serv+es it on the server. 
+development version of the project and serves it on the server. 
 
 but when i want tell parcel to make a production build by using build command
 npx parcel build index.html , it will create a lot of things it will minify your file 
