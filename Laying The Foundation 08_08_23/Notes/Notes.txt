@@ -52,8 +52,63 @@ const heading = React.createElement(
 
 so jsx seems to be easier than creating an element usng React. 😀
 
+How yo give className in an JSX Element 💥
+--------------------------------------------
+const heading = <h1 id= "heading" className="heading">Hello Namestey React</h1>
+
+// How to create an JSX 
+
+const heading = (
+    <>
+        <h1>💙 Namestey React 💛</h1>
+        <ul>
+            <li>Course Name: Namestey React</li>
+            <li>Mentor Name: Akshay Saini</li>
+            <li>Course Fee: 2100</li>
+            <li> <a href="https://namastedev.com/namaste-react/">Website Link</a></li>
+        </ul>
+    </>
+)
+
+
+🧡 Two types Of Components in React 
+    💥Class Based Component
+    💥Functional Component
+
+. Class Based Componet is the old way of writting code
+. Functional based component is the new way of writting code 
+
+💦Functional Component
+------------------------
+its just like an normal arrow function and it always returns some JSX Code
+Syntax: 
+
+const HeadingComponent = () =>{
+    return(
+        <>
+            <h1>This is React Functional Component</h1>
+        </>
+    )
+}
+
+writting the same function without return
+------------------------------------------
+const HeadingComponent2 = () => (<h1>This is React Functional Component</h1>)
+
+🧡Important Note: 
+
+    - I have written the functional component with return and without return 
+    both are same.
 
 Notes:🎇
 -------
 - React.createElement creates an object. 
+- Babel is Javascript Compiler.
+- Some older version browser don't understand the newer version es6 language 
+    so here babel will convert the code so that the older version 
+    browser also understand it.
+
+- Babel is a javascript library which takes a peice of code 
+reads that code and converts that code into something else, and 
+it convert different type of code to different type of code.
 
