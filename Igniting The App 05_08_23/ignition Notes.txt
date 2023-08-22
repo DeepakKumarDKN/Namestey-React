@@ -67,10 +67,7 @@ package-lock.json and node_modules
 
 package-lock.json
 ------------------
-this file keeps the track of exact version.
-
-
-
+this file keeps the track of exact version. It Lock the version
 
 npx
 ---
