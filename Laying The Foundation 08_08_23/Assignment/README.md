@@ -20,7 +20,7 @@ const heading = React.createElement(
 
 Note:
 ----
-JSX solve our readibility issue because the code written in JSX is much mofre easy as compared to the code 
+JSX solve our readibility issue because the code written in JSX is much more easy as compared to the code 
 whch are written without JSX.
 
 
