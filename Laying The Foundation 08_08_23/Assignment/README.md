@@ -23,5 +23,8 @@ Note:
 JSX solve our readibility issue because the code written in JSX is much more easy as compared to the code 
 whch are written without JSX.
 
+JSX was developed by Facebook Developers
+This is HTML Like syntax but this is not HTML
+
 
 ```
