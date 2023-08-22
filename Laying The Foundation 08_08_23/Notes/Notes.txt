@@ -23,7 +23,7 @@ other version but it will definitely work on last two versions of chrome.
 * we dont have to write polyfill babel does that for us.
 
 *Tree Shaking mean removing unwanted code supoose we are using a library which have 5 function but 
-i will use only 2 and rest of the 3 i dont want to use so what parcel will fo it will ignore those 3
+i will use only 2 and rest of the 3 i dont want to use so what parcel will do it will ignore those 3
 three functions.
 
 command to run the project 
@@ -31,4 +31,5 @@ npx parcel index.html
 =======
 * we dont have to write polyfill babel does that for us.
 >>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
+
 
