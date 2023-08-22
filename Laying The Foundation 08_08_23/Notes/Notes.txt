@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 * Command to bring npm to our project : - npm init.
-=======
 * Command to bring npm to our project : - npm init
->>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
 * Doing npm init will bring us package.json to our project
 * There two type of dependency 
     normal dependency : 
@@ -19,17 +16,40 @@ other version but it will definitely work on last two versions of chrome.
 
 * Babel converts the newer code to older code.
 * Our modern Javascript (ES6) is converted into older Javascript and that is known as polyfill.
-<<<<<<< HEAD
 * we dont have to write polyfill babel does that for us.
 
 *Tree Shaking mean removing unwanted code supoose we are using a library which have 5 function but 
 i will use only 2 and rest of the 3 i dont want to use so what parcel will do it will ignore those 3
 three functions.
-
 command to run the project 
 npx parcel index.html
-=======
-* we dont have to write polyfill babel does that for us.
->>>>>>> fef68d0167598f01c0bfa999dec953c312582c74
 
+* we dont have to write polyfill babel does that for us.
+
+* JSX is not html inside the javascript jsx is html like syntax.
+
+creating element using jsx
+---------------------------
+const heading = <h1 id= "heading">Hello Namestey React</h1>
+
+- This JSX Code is transpiled/converted into React.createElement 
+behind the scenes and the React.createElement is again converted into
+JS Element or Js Object which is a ResctElement and at last it rendered 
+into the DOM as an HTML Element.
+
+
+creating element using React
+----------------------------
+const heading = React.createElement(
+    "h1",
+    {id:'title'}, 
+    'Hello Namestey React'
+)
+
+so jsx seems to be easier than creating an element usng React. 😀
+
+
+Notes:🎇
+-------
+- React.createElement creates an object. 
 
