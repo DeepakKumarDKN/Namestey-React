@@ -199,7 +199,7 @@ example for carat and tilde :
 ----------------------------
 suppose there is a minor update 2.8.3 and there is a major update 3.2.1 if i will put carat sign (^) then parcel 
 will automatically update its version to 2.8.3 and if i will put tilde sign(~) then  parcel will automatically 
-update its version to 3.2.1 becaue tilde always gets update to the major one.
+install the major version to 3.2.1.
 
 its good to use carat we can also use tilde instead of carat but carat is
 good.
