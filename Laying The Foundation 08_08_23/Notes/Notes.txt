@@ -32,10 +32,14 @@ creating element using jsx
 ---------------------------
 const heading = <h1 id= "heading">Hello Namestey React</h1>
 
+How Does It Work Behing The scene 👓
+
 - This JSX Code is transpiled/converted into React.createElement 
 behind the scenes and the React.createElement is again converted into
-JS Element or Js Object which is a ResctElement and at last it rendered 
+JS Element or Js Object which is a ReactElement and at last it rendered 
 into the DOM as an HTML Element.
+
+- But who is doing this conversion , it is done by 💝 Babel 💝
 
 
 creating element using React
