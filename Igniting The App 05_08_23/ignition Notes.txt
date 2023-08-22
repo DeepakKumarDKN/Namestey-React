@@ -143,6 +143,8 @@ being made by bundler which make the app first.
 - Zero Config.
 - Tree Shaking mean removing unwanted code.
 
+- The most expensie thing in our webpage is to load images to it but parcel take care of it as well it helps in 
+image optimization.
 
 Browserlist 
 -----------
@@ -182,7 +184,7 @@ it locks the version / its keeps the track of exact version
 npm doesn't have a fullform
 all the libraries, utilities, packages comes from npm.
 
-React doesn't making our app first its just make to an extent but there are lot of other 
+React make our app first but upto some extent but there are lot of other 
 things are also required which makes our app first , a lot of other packages are needed 
 to make our app first. 
 
