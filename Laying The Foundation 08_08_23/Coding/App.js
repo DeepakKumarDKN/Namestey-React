@@ -37,7 +37,6 @@ const CourseComponent = () =>(
 const HeadingComponent = () =>(
         <>
             <CourseComponent />
-            
             <h1 className = "functional_component">Functional Component 🧡</h1>
             <p>Look at the code file to see how functional Componet is written</p>
 

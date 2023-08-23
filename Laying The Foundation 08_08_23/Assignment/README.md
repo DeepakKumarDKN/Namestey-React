@@ -20,11 +20,14 @@ const heading = React.createElement(
 
 Note:
 ----
-JSX solve our readibility issue because the code written in JSX is much more easy as compared to the code 
+- JSX solve our readibility issue because the code written in JSX is much more easy as compared to the code 
 whch are written without JSX.
 
-JSX was developed by Facebook Developers
-This is HTML Like syntax but this is not HTML
+- JSX was developed by Facebook Developers
+- This is HTML Like syntax but this is not HTML
+
+- JSX is not HTML inside Javascript, but most of the people thinks that it is HTML inside Javascript
+this is a HTML like syntax
 
 
 ```

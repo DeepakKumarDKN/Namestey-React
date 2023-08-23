@@ -40,7 +40,9 @@ JS Element or Js Object which is a ReactElement and at last it rendered
 into the DOM as an HTML Element.
 
 - But who is doing this conversion , it is done by 💝 Babel 💝
+when a JSX element is converted into React.createElement this conversion is made by Babel 🧡
 
+- JSX => React.createElement => Js Element/Object => HTML(DOM)
 
 creating element using React
 ----------------------------
