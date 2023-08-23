@@ -79,6 +79,9 @@ const heading = (
 
 . Class Based Componet is the old way of writting code
 . Functional based component is the new way of writting code 
+. Name of functional component always starts with Capital Letter but it is not mandatory
+it will work fine if we don't write it in capital letter but writting in capital letter 
+is a good practise.
 
 💦Functional Component
 ------------------------
@@ -115,6 +118,11 @@ Notes:🎇
 - Babel is a javascript library which takes a peice of code 
 reads that code and converts that code into something else, and 
 it convert different type of code to different type of code.
+
+- JSX is not HTML inside Javascript, but most of the people thinks that it is HTML inside Javascript
+this is a HTML like syntax, its a fancy way of writting HTML
+
+- 
 
 
 - What is Component Composition 🧨
