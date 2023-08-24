@@ -116,3 +116,65 @@ const Heading = () =>  {
 }
 
 ```
+## Create a Header Component from scratch using Functional Component with JSX 💙✡
+```
+Code for Functional Component
+-----------------------------
+const Header = () =>{
+    return (
+        <div className="header_bar">
+            <ul className="list-items">
+                <li>
+                    <img src= {logo} alt="image"/>
+                </li>
+                <li className="search_bar">
+                    <input type="text" placeholder="Search"/>
+                </li>
+                <li>
+                    <img src={Javascript} alt="javascript_image"/>
+                </li>
+            </ul>
+        </div>
+    )   
+}
+
+Styling For Css
+---------------
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    background-color: rgb(79, 77, 77);
+    color:white;
+    padding:0;
+    margin:0;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_bar{
+    font-family: "Poppins";
+    padding-top: 10px;
+}
+.list-items{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    line-height: 50px;
+}
+.search_bar input{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 7px;
+}
+.search_bar ::placeholder{
+    color:white;
+    font-family: "Poppins";
+}
+
+.search_bar input:focus{
+    border:none;
+}
+
+```
