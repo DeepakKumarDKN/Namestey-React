@@ -31,3 +31,88 @@ this is a HTML like syntax
 
 
 ```
+
+## Superpower of JSX .?
+```
+- JSX make our code looks elegant and simple.
+- if we want to write a large peice of code then we should go for JSX.
+- it prevents cross-side shifting effects.
+
+```
+## Coding Assignment
+```
+1. Create a Nested Header Element using React.createElement(h1,h2,h3 inside a di usin class title)
+
+const createTag = React.createElement(
+    'div',
+    {className:'title'},
+    [React.createElement('h1',{}, 'This is H1 Tag')],
+    [React.createElement('h2',{}, 'This is H2 Tag')],
+    [React.createElement('h3',{},'This is H3 Tag')],
+
+
+) 
+```
+```
+2.Create the Same Element Using JSX
+
+const heading = (
+    <div className = "title">
+        <h1>This is h1 Tag 💛</h1>
+        <h2>This is h2 Tag 🧡</h2>
+        <h3>This is h3 Tag 💙</h3>
+    </div>
+)
+```
+```
+3. Create a functional component of the same with JSX
+const Heading = () =>  {
+    return (
+    <div className = "title">
+        <h1>This is h1 Tag 💛</h1>
+        <h2>This is h2 Tag 🧡</h2>
+        <h3>This is h3 Tag 💙</h3>
+    </div>
+    )
+}
+```
+```
+4.Pass Attribute into the tag is JSX
+
+const Heading = () =>  {
+    return (
+    <div className = "title">
+        <h1 style= {{color : 'black', fontFamily: "sans-serif"}}>This is h1 Tag 💛</h1>
+        <h2 style = {{color : "red", fontFamily: "sans-serif"}}>This is h2 Tag 🧡</h2>
+        <h3 style= {{color : 'blue', fontFamily: "sans-serif"}}>This is h3 Tag 💙</h3>
+    </div>
+    )
+}
+```
+```
+5. Composition Of Component (Add omponent inside another)
+
+const CourseComponent = () =>(
+    <>
+        <h1>💙 Namestey React 💛</h1>
+        <ul>
+            <li>Course Name: Namestey React</li>
+            <li>Mentor Name: Akshay Saini</li>
+            <li>Course Fee: 2100</li>
+            <li> <a href="https://namastedev.com/namaste-react/">Website Link</a></li>
+        </ul>
+    </>
+)
+
+const Heading = () =>  {
+    return (
+    <div className = "title">
+        <CourseComponent />
+        <h1 style= {{color : 'black', fontFamily: "sans-serif"}}>This is h1 Tag 💛</h1>
+        <h2 style = {{color : "red", fontFamily: "sans-serif"}}>This is h2 Tag 🧡</h2>
+        <h3 style= {{color : 'blue', fontFamily: "sans-serif"}}>This is h3 Tag 💙</h3>
+    </div>
+    )
+}
+
+```

@@ -79,13 +79,18 @@ const heading = (
 
 . Class Based Componet is the old way of writting code
 . Functional based component is the new way of writting code 
-. Name of functional component always starts with Capital Letter but it is not mandatory
-it will work fine if we don't write it in capital letter but writting in capital letter 
-is a good practise.
+
 
 💦Functional Component
 ------------------------
 its just like an normal javascript function which always returns some javascript code.
+
+. Name of functional component always starts with Capital Letter but it is not mandatory
+it will work fine if we don't write it in capital letter but writting in capital letter 
+is a good practise.
+
+. Functional component is a normal function which return a peice a JSX element.
+
 Syntax: 
 
 const HeadingComponent = () =>{

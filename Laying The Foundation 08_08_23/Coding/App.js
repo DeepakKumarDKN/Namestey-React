@@ -20,12 +20,12 @@ const create_element = React.createElement(
 
 const CourseComponent = () =>(
     <>
-        <h1>💙 Namestey React 💛</h1>
+        <h1 style={{fontFamily:'Poppins'}}>💙 Namestey React 💛</h1>
         <ul>
-            <li>Course Name: Namestey React</li>
-            <li>Mentor Name: Akshay Saini</li>
-            <li>Course Fee: 2100</li>
-            <li> <a href="https://namastedev.com/namaste-react/">Website Link</a></li>
+            <li style={{fontFamily:'Poppins'}}>Course Name: Namestey React</li>
+            <li style={{fontFamily:'Poppins'}}>Mentor Name: Akshay Saini</li>
+            <li style={{fontFamily:'Poppins'}}>Course Fee: 2100</li>
+            <li style={{fontFamily:'Poppins'}}> <a href="https://namastedev.com/namaste-react/">Website Link</a></li>
         </ul>
     </>
 )
@@ -43,5 +43,20 @@ const HeadingComponent = () =>(
         </>
     )
 
+const MessageComponent = (
+    <h1 style= {{fontFamily:'Poppins'}}>Course is Good Got To Know a Lot Of Things </h1>
+)
+
+const Heading = () =>  {
+    return (
+    <div className = "title">
+        <CourseComponent />
+        {MessageComponent}
+        <h1 style= {{color : 'black', fontFamily: "Poppins"}}>This is h1 Tag 💛</h1>
+        <h2 style = {{color : "red", fontFamily: "Poppins"}}>This is h2 Tag 🧡</h2>
+        <h3 style= {{color : 'blue', fontFamily: "Poppins"}}>This is h3 Tag 💙</h3>
+    </div>
+    )
+}
 const root = ReactDom.createRoot(document.getElementById('root'))
-root.render(<HeadingComponent />)
+root.render(<Heading/>)
