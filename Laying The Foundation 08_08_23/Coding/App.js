@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom/client'
+import logo from './logo.png'
+import Javascript from './Javascript.png'
+
+
 
 const create_element = React.createElement(
     'div',
@@ -58,5 +62,23 @@ const Heading = () =>  {
     </div>
     )
 }
+
+const Header = () =>{
+    return (
+        <div className="header_bar">
+            <ul className="list-items">
+                <li>
+                    <img src= {logo} alt="image"/>
+                </li>
+                <li className="search_bar">
+                    <input type="text" placeholder="Search"/>
+                </li>
+                <li>
+                    <img src={Javascript} alt="javascript_image"/>
+                </li>
+            </ul>
+        </div>
+    )   
+}
 const root = ReactDom.createRoot(document.getElementById('root'))
-root.render(<Heading/>)
+root.render(<Header/>)
