@@ -40,48 +40,18 @@ const BestOffers = () =>{
     )
 }
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
     return(
         <div className='res_card'>
             <div className="card_one">
-                <img className="image_one" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7"/>
-                <p className="food_name">Pizza Hut</p>
+                <img className="image_one" src={props.imageLink}/>
+                <p className="food_name">{props.foodname}</p>
                 <p className="rating">
                     <img className= "star" src={Star} />
-                    <p>4.1</p>
+                    <p>{props.rating}</p>
                 </p>
-                <p className="items_name">Fast Food, Pizzas</p>
-                <p className="Location">Netaji Nagar</p>
-            </div>
-            <div className="card_one">
-                <img className="image_one" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0984acc0ed7b914206dbbcb90297becc"/>
-                <p className="food_name">Wow! Momo</p>
-                <p className="rating">
-                    <img className= "star" src={Star} />
-                    <p>4.3</p>
-                </p>
-                <p className="items_name">Tibetian, Healthy Food Asian</p>
-                <p className="Location">Tollygunge</p>
-            </div>
-            <div className="card_one">
-                <img className="image_one" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/sxjyupdgbmh0gfookx9l"/>
-                <p className="food_name">Dominos Pizza</p>
-                <p className="rating">
-                    <img className= "star" src={Star} />
-                    <p>4.1</p>
-                </p>
-                <p className="items_name">Pizzas, Italian, Dessert </p>
-                <p className="Location">Paschim Putiary</p>
-            </div>
-            <div className="card_one">
-                <img className="image_one" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1ace5fa65eff3e1223feb696c956b38b"/>
-                <p className="food_name">Subway</p>
-                <p className="rating">
-                    <img className= "star" src={Star} />
-                    <p>4.1</p>
-                </p>
-                <p className="items_name">Fast Food, Healthy, Salad</p>
-                <p className="Location">Regent Park</p>
+                <p className="items_name">{props.itemname}</p>
+                <p className="Location">{props.location}</p>
             </div>
         </div>
     )
@@ -97,9 +67,29 @@ const Body = () => {
 
             <BestOffers />
 
-            <div className='RestaurantContainer'>
-             <h1 className="top_res">Top resturants chains in Kolkata</h1>   
-            <RestaurantCard />
+            <div className='Restaurant'>
+            <h2 className="top_res">Top resturants chains in Kolkata</h2>  
+            <div className="resturant_container">
+                <RestaurantCard 
+                foodname="Pizza Hut" rating="4.1" 
+                itemname="Fast Food, Pizzas" location="Netaji Nagar" 
+                imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7"/>
+
+                <RestaurantCard 
+                foodname="Wow! Momo" rating="4.3" 
+                itemname="Tibetian, Healthy Food Asian" location="Tollygunge"
+                imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0984acc0ed7b914206dbbcb90297becc"/>
+
+                <RestaurantCard 
+                foodname="Dominos Pizza" rating="4.8" 
+                itemname="Pizzas, Italian, Dessert" location="Paschim Putiary" 
+                imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/sxjyupdgbmh0gfookx9l"/>
+
+                <RestaurantCard 
+                foodname="Subway" rating="4.3" 
+                itemname="Fast Food, Healthy, Salad" location="Regent Park" 
+                imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/1ace5fa65eff3e1223feb696c956b38b"/>
+            </div>
             </div>
         </div>
     )

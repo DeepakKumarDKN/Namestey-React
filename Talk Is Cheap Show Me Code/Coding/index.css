@@ -76,11 +76,12 @@ body{
     width: 100%;
 }
 
-.res_card{
+.resturant_container{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+
 }
 .top_res{
     margin: 10px 0px;
