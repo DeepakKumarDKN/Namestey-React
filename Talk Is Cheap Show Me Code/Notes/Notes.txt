@@ -13,4 +13,53 @@ const Title = () => {
     )
 }
 
- 
+Props
+-----
+const RestaurantCard = (props) => {
+    return(
+        <div className='res_card'>
+            <div className="card_one">
+                <img className="image_one" src={props.imageLink}/>
+                <p className="food_name">{props.foodname}</p>
+                <p className="rating">
+                    <img className= "star" src={Star} />
+                    <p>{props.rating}</p>
+                </p>
+                <p className="items_name">{props.itemname}</p>
+                <p className="Location">{props.location}</p>
+            </div>
+        </div>
+    )
+}
+
+<div className="resturant_container">
+    <RestaurantCard 
+    foodname="Pizza Hut" rating="4.1" 
+    itemname="Fast Food, Pizzas" location="Netaji Nagar" 
+    imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7"/>
+</div>
+
+
+We can also desctructure props like: 
+-------------------------------------
+
+Note: due to destructuring it is not required to write props.location  we can just write 
+{location} doing it inside the curly brackets and still it will work fine.
+
+
+const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
+    return(
+        <div className='res_card'>
+            <div className="card_one">
+                <img className="image_one" src={imageLink}/>
+                <p className="food_name">{foodname}</p>
+                <p className="rating">
+                    <img className= "star" src={Star} />
+                    <p>{props.rating}</p>
+                </p>
+                <p className="items_name">{itemname}</p>
+                <p className="Location">{location}</p>
+            </div>
+        </div>
+    )
+}
