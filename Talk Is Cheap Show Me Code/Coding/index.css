@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
 }
 .nav_items ul{
     list-style-type: none;
@@ -29,7 +30,7 @@ body{
     font-weight: 500;
 }
 .header .logo_container .logo{
-    width: 120px;
+    width: 80px;
 }
 
 .Body{
