@@ -1,0 +1,16 @@
+const title = (
+    <h1 id="title">Food Villa App</h1>
+    <p>This is called React Element</p>
+)
+
+
+const Title = () => {
+    return(
+        <div>
+            <h1 id="title">Food Villa App</h1>
+            <p>This is called React Component</p>
+        </div>
+    )
+}
+
+ 

@@ -2,6 +2,127 @@
 
 *{
     font-family: 'Poppins';
-    background-color: rgb(39, 38, 38);
-    color:white;
+    background-color: xrgb(255, 255, 255);
+    color:rgb(12, 12, 12);
+    margin:0;
+    padding:0;
 }
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.heading{
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_items ul{
+    list-style-type: none;
+    display:flex;
+    gap: 1rem;
+    
+}
+.nav_items ul li{
+    font-weight: 500;
+}
+.header .logo_container .logo{
+    width: 120px;
+}
+
+.Body{
+    margin-bottom: 2rem;
+}
+.search_bar{
+    display:flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+.search_bar input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    font-size: 15px;
+}
+    
+.submit_button{
+    display:block;
+    padding: 10px 20px;
+    border:none;
+    font-size: 15px;
+}
+.submit_button:hover{
+    background-color: #ee8e09;
+    color: white;
+}
+
+/* offers-image -section */
+.best-offers-heading{
+    margin-bottom: 1.5rem;
+}
+
+.offers_image_containers{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.offers_image_one{
+    width:450px;
+}
+.offers_image_one img{
+    width: 100%;
+}
+
+.res_card{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.top_res{
+    margin: 10px 0px;
+}
+
+.card_one{
+    width: 320px;
+
+}
+
+.card_one:hover{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.image_one{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 20px;
+}
+.star{
+    background-color: green;
+    width: 12px;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.rating{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+}
+.food_name{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.items_name, 
+.Location{
+    color:rgb(162, 161, 161);
+    font-weight: 300;
+}
+
