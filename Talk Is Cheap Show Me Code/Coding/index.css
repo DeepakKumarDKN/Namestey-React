@@ -82,6 +82,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    gap: 1rem;
 
 }
 .top_res{
@@ -89,7 +90,8 @@ body{
 }
 
 .card_one{
-    width: 320px;
+    width: 300px;
+    overflow: hidden;
 
 }
 
