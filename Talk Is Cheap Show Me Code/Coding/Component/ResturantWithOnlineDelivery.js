@@ -1,6 +1,8 @@
 import Star from "../Star.png"
 
 
+
+
 const ResturantWithOnlineDelivery = (props) =>{
     const {resData} = props
     return(

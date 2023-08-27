@@ -3,7 +3,6 @@ import ReactDOM  from 'react-dom/client'
 import Header from './Component/Header.js'
 import Body from './Component/Body'
 
-
 const Heading = () => (
     <>
         <Header/>

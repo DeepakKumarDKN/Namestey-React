@@ -1,6 +1,8 @@
 import BestOffers from "./BestOffer"
+import FilterComponent from "./FilterComponent"
 import RestaurantCard from "./ResturantCard"
 import ResturantWithOnlineDelivery from "./ResturantWithOnlineDelivery"
+
 
 const AllResturant = [
     {
@@ -2156,6 +2158,7 @@ const Body = () => {
 
             <div class="OnlineResturant">
             <h2>Resturant With Online Food Delivery In Kolkota</h2>
+            <FilterComponent />
             <div className="resturant_container">
                 {
                     AllResturant.map((resturant)=>(
