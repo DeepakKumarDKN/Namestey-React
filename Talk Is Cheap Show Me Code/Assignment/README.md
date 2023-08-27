@@ -1,2 +1,1 @@
-# Namestey React 💛
-## Assignments for Episode 4
+# Namestey React 💛 Assignments for Episode 4 ❤
