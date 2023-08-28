@@ -6,7 +6,7 @@ import DownloadComponent from './src/Component/DownloadComponent.js'
 import FooterComponent from "./src/Component/FooterComponent.js"
 
 
-const Heading = () => (
+const AppLayout = () => (
     <>
         <Header/>
         <Body/>
@@ -18,4 +18,4 @@ const Heading = () => (
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<Heading/>)
+root.render(<AppLayout/>)

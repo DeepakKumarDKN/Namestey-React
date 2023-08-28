@@ -83,7 +83,7 @@
 }
 
 .res-heading-online{
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 .resturant_container{
@@ -262,3 +262,18 @@
     font-weight: 700;
 }
 
+.top_resturants{
+   border:none;
+   padding: 5px;
+   background-color: rgb(238, 142, 6);
+   color:white;
+   border-radius: 20px;
+   cursor: pointer;
+    
+}
+
+.header-bar-restaurants{
+    display:flex;
+    justify-content: space-between;
+    margin: 1rem;
+}

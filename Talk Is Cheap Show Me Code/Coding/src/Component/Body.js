@@ -3,9 +3,15 @@ import BestOffers from "./BestOffer"
 import FilterComponent from "./FilterComponent"
 import RestaurantCard from "./ResturantCard"
 import ResturantWithOnlineDelivery from "./ResturantWithOnlineDelivery"
+import { useState } from "react"
+
 
 const Body = () => {
+
+    let [ListOfResturants, setResturants] = useState(AllResturant)
+
     return(
+
         <div className= "Body maxWidth">
             <div className="search_bar">
                 <input type="text" placeholder="Search"/>
@@ -39,11 +45,26 @@ const Body = () => {
             </div>
             <hr></hr>
             <div class="OnlineResturant">
-            <h2 className="res-heading-online">Resturant With Online Food Delivery In Kolkota</h2>
+                <div className="header-bar-restaurants">
+                    
+                <h2 className="res-heading-online">Resturant With Online Food Delivery In Kolkota</h2>
+
+                <button className='top_resturants' onClick={()=>{
+                // filter logic 
+                ListOfResturants = ListOfResturants.filter(
+                    (res) => res.info.avgRating > 4.5)
+                    setResturants(ListOfResturants)
+            }}>
+                Top Resturants In Kolkata
+            </button>
+
+                </div>
+
             <FilterComponent />
+            
             <div className="resturant_container">
                 {
-                    AllResturant.map((resturant)=>(
+                    ListOfResturants.map((resturant)=>(
                         <ResturantWithOnlineDelivery resData ={resturant}/>
                     ))
                 }
