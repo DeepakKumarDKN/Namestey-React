@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
-import Header from './Component/Header.js'
-import Body from './Component/Body'
+import Header from './src/Component/Header.js'
+import Body from './src/Component/Body.js'
+import DownloadComponent from './src/Component/DownloadComponent.js'
+import FooterComponent from "./src/Component/FooterComponent.js"
+
 
 const Heading = () => (
     <>
         <Header/>
         <Body/>
-        
-        <h1 className="heading"> 🧡Episode 4: Talk is Cheap Show Me Your Code 💛</h1>
-        <h1 className="heading">Food App</h1>
+        <DownloadComponent/>
+        <FooterComponent/>
     </>
 )
 

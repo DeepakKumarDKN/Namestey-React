@@ -1,8 +1,10 @@
+import { LOGO_URL } from "../Utils/constants"
+
 const Header = () =>{
     return(
         <div className="header">
             <div className="logo_container">
-                <img className="logo" src="https://www.theknowhowlib.com/wp-content/uploads/2020/05/Swiggy-2.png"/>
+                <img className="logo" src= {LOGO_URL}/>
 
             </div>
             <div className="nav_items">

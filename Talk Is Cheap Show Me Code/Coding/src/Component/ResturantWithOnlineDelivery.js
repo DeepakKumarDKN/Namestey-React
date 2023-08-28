@@ -1,4 +1,5 @@
-import Star from "../Star.png"
+import Star from "../Images/Star.png"
+import { RESTURANT_IMAGE_URL } from "../Utils/constants"
 
 
 
@@ -8,8 +9,7 @@ const ResturantWithOnlineDelivery = (props) =>{
     return(
        <div className='res_card'>
             <div className="card_one">
-                <img className="image_one" src={
-                    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId
+                <img className="image_one" src={RESTURANT_IMAGE_URL+ resData.info.cloudinaryImageId
                 }/>
                 <p className="food_name">{resData.info.name}</p>
                 <p className="rating">

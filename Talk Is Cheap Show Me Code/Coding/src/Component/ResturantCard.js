@@ -1,4 +1,4 @@
-import Star from '../Star.png'
+import Star from '../Images/Star.png'
 
 const RestaurantCard = (props) => {
     return(

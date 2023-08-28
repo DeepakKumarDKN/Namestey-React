@@ -8,8 +8,9 @@
     margin:0;
     padding:0;
 }
-body{
-    max-width: 1400px;
+
+.maxWidth{
+    max-width: 1200px;
     margin: 0 auto;
 }
 .heading{
@@ -19,12 +20,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    margin-bottom: 2rem;
+    padding: 10px 7rem;
+    box-shadow: 10px 0px 30px 5px rgb(208, 205, 205);
+    
 }
 .nav_items ul{
     list-style-type: none;
     display:flex;
-    gap: 1rem;
+    gap: 2rem;
     
 }
 .nav_items ul li{
@@ -72,10 +76,14 @@ body{
 }
 
 .offers_image_one{
-    width:450px;
+    width:380px;
 }
 .offers_image_one img{
     width: 100%;
+}
+
+.res-heading-online{
+    margin-top: 3rem;
 }
 
 .resturant_container{
@@ -93,18 +101,19 @@ body{
 
 
 .card_one{
-    width: 300px;
+    width: 280px;
     overflow: hidden;
 
 }
 
 .card_one:hover{
-    padding: 10px;
+    padding: 8px;
+    transition: all 0.30s
 }
 
 .image_one{
    width: 100%;
-   height: 200px;
+   height: 190px;
    object-fit: cover;
    border-radius: 20px;
 }
@@ -133,20 +142,21 @@ body{
 }
 
 .filter_section{
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .filter_section .list_items li{
     list-style-type: none;
     border: 1px solid rgb(178, 175, 175);
-    padding:  5px 20px;
+    padding:  8px 20px;
     border-radius: 15px;
     font-weight: 400;
     color:rgb(51, 50, 50);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .filter_section .list_items li:nth-child(1) p{
@@ -179,5 +189,76 @@ body{
 .filter_section .list_items{
     display:flex;
     gap: 1rem;
+}
+
+.sort_by{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sort_by img{
+    width: 10px;
+    height: 10px;
+}
+
+/* download section starts */
+
+.app_download{
+    display: flex;
+    gap: 1rem;
+}
+
+.app_download img{
+    width: 200px;
+    height: 65px;
+}
+
+.download_component{
+    background-color: rgb(238, 237, 237);
+    padding: 1rem 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.download_heading{
+    color:rgb(22, 22, 22);
+    font-size: 1.5rem;
+    width: 34%;
+    font-weight: 700;
+}
+
+.footer_component{
+    background-color: black;
+    padding: 2rem 11rem 10rem 11rem;
+    display:flex;
+    justify-content: space-between;
+}
+.footer_component p{
+    color:white;
+}
+
+.SwiggyLogo .Logo-container{
+    display:flex;
+    align-items: center;
+}
+
+
+.company_section ul li,
+.contact_section ul li,
+.deliverSection ul li{
+    color: rgb(212, 210, 210);
+    list-style-type: none;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.company_section ul li:first-child,
+.contact_section ul li:first-child,
+.deliverSection ul li:first-child{
+
+    color:rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
