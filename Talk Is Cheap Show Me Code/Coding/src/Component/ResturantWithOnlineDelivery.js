@@ -1,9 +1,6 @@
 import Star from "../Images/Star.png"
 import { RESTURANT_IMAGE_URL } from "../Utils/constants"
 
-
-
-
 const ResturantWithOnlineDelivery = (props) =>{
     const {resData} = props
     return(
@@ -16,7 +13,7 @@ const ResturantWithOnlineDelivery = (props) =>{
                     <img className= "star" src={Star} />
                     <p>{resData.info.avgRating}</p>
                 </p>
-                <p className="items_name">{resData.info.cuisines.join(',')}</p>
+                <p className="items_name">{resData.info.cuisines.join(', ')}</p>
                 <p className="Location">{resData.info.areaName}</p>
             </div>
         </div> 
