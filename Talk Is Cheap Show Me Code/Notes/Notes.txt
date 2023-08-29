@@ -63,3 +63,41 @@ const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
         </div>
     )
 }
+
+whenever a state variable update react re render the component 
+
+let [ListOfResturants] = useState() : here i am creating a state variable 
+let ListOfResturants ; here i am creating a javascript variable.
+
+
+
+. if i am passing anthing inside the useState then i am passing a default alue for example : 
+let [ListOfResturants] = useState('Resturant One)
+
+so here i am passing the Resturamt One as the default Vakue.
+
+What is State.? 
+State is basically an object in which we can save some data like we used to save in variable.
+state is basically used in a component
+we can use state in functional component
+for functional component it is useState and for Class Component it is this.state
+
+why do we use state not variable. 
+because if we use variable our componet will not get updated as we have seen in the previous example.
+but if we use state we can do the update.
+
+if we are using state then our component will re-render so thats why data will also get update.
+but if we are using only variable and we want to update the variable then it will not happen because 
+re-render will not happen 
+
+to use state we have to import React
+useState('anil') here i have given an default name you can give othername's as well 
+its just a default value.
+
+<h1>{data}</h1>
+data = anil
+the value we have in the data is getting displayed in the screen
+
+setData : if we will not write setData then the value will not get updated.
+
+So in component it is better to use useState while using data. 

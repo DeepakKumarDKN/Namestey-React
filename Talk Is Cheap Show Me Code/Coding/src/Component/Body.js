@@ -49,12 +49,9 @@ const Body = () => {
                     
                 <h2 className="res-heading-online">Resturant With Online Food Delivery In Kolkota</h2>
 
-                <button className='top_resturants' onClick={()=>{
-                // filter logic 
-                ListOfResturants = ListOfResturants.filter(
-                    (res) => res.info.avgRating > 4.5)
-                    setResturants(ListOfResturants)
-            }}>
+                <button className='top_resturants' onClick={() => setResturants(
+                    ListOfResturants.filter((res) => res.info.avgRating > 4.6)
+                )}>
                 Top Resturants In Kolkata
             </button>
 
