@@ -53,5 +53,4 @@ I can also write Like This
     <Component C/> 
 </>
 
-Both will work in the same way Second one is the Shortcut way to write
 ```
