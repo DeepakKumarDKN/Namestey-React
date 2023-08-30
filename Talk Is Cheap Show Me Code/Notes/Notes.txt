@@ -1,8 +1,20 @@
+# This will just act as a variable
+# To access functional Component we can just write {title}
+
 const title = (
     <h1 id="title">Food Villa App</h1>
     <p>This is called React Element</p>
 )
 
+Functional Component
+---------------------
+To access a functional Component we have to write 
+<Title/>
+
+I can also access Functional Component like: 
+<Title></Title>
+
+Its better to use the upper One to call the function.
 
 const Title = () => {
     return(
@@ -12,6 +24,22 @@ const Title = () => {
         </div>
     )
 }
+
+what  can i wrire inside the {}. 
+--------------------------------
+I can write any thing like 
+{console.log('hello')}
+
+I can also write any peice of Javascript inside JSX Like: 
+{3+5} 8 will display on the screen.
+
+How to wtite comments inside JSX
+---------------------------------
+{
+    // This is a comment
+}
+
+
 
 Props
 -----

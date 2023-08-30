@@ -52,7 +52,7 @@ const Body = () => {
             <div className="resturant_container">
                 {
                     ListOfResturants.map((resturant)=>(
-                        <ResturantWithOnlineDelivery resData = {resturant}/>
+                        <ResturantWithOnlineDelivery key = {resturant.info.id} resData = {resturant}/>
                     ))
                 }
             </div>
