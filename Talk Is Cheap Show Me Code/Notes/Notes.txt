@@ -41,6 +41,8 @@ How to wtite comments inside JSX
 
 
 
+
+
 Props
 -----
 const RestaurantCard = (props) => {
@@ -129,3 +131,27 @@ the value we have in the data is getting displayed in the screen
 setData : if we will not write setData then the value will not get updated.
 
 So in component it is better to use useState while using data. 
+
+Note:
+------
+Any JSX Expression can have only one Parent Element.
+const Example = () =>{
+    return(
+        <> -------------------------------- This is thee parent and we nly can have one parent.
+            <ComponentOne/>
+            <ComponentTwo/>
+        </> -------------------------------- This is called React Fragment.
+    )
+}
+
+const Example = () =>{
+    return(
+        <div> -------------------------------- This is the parent and we nly can have one parent.
+            <ComponentOne/>
+            <ComponentTwo/>
+        </div>
+    )
+}
+
+we should prefer the upper one .
+React.Fragment is comming from the react library, It is Like an Enpty Tag.

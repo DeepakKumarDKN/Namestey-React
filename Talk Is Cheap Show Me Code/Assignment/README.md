@@ -32,12 +32,17 @@ prefer the upperr one we can use any on of them either the upper one or this one
 ```
 ## What is React Fragment
 ```
-If i want to return Multiple Elements then i have to write it inside the React Fragment for Example 
+React Fragment is An Empty Tag which come from the React Libraray. 
+We want only One parent Any JSX Expression need Only One Parent.
+This is used to avoid unnecessary div inside the root.
+It also act as a one Parent inside the JSX.
 
-<ReactFragment>
+<React.Fragment>
+
     <Component A/>
     <Component B/>
     <Component C/>
+
 </React.Fragment>
 
 I can also write Like This 
