@@ -1,0 +1,32 @@
+React uses somehing called reconciliation Algorithim which is also known as 
+React Fibre
+
+Suppose i have a container and in that container i have like 15 cards but i want to filter it by which 
+i just want to filter 5 cards out of 15 cards
+
+so first of all React creats a virtual dom for all those 15 cards. Remember one thing the virtual dom is 
+not an Actual Dom.
+
+Virtual Dom is a representation of Actual Dom.
+Virtual Dom is nothing just an Javascript Object
+
+
+Diff Algorithim 
+----------------
+It finds out the diffrence between two  dom the updated virtual dom and the previous dom (old virtual dom)
+when i am filtering out something using logic we can call that as a new virtual dom  and the other one is old 
+virtual dom
+
+so i am filtering out something using an logic it will find out the diffrence between the two dom and it will
+update the dom on every render cycle
+
+This whole algorithim is known as react fibre which has come up in React 16, which is known as Reconciliation
+A new algorithim came out to Update The Dom.
+
+This is also known as React Fibre which finds out the diffrence between updated dom and the old dom and then it 
+update the dom .
+
+Suppose i want to change filter out 5 cards and that too when i will do it . when i will click on the button 
+so as soon as i click on the button its creates a new object because preiously we are having 15 cards and now we are just 
+having 5 cards so it will create a new object for the filtere objects and then it finfds out the diffrence between the two 
+objects and then it actually update the DOM.
