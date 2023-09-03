@@ -30,3 +30,6 @@ Suppose i want to change filter out 5 cards and that too when i will do it . whe
 so as soon as i click on the button its creates a new object because preiously we are having 15 cards and now we are just 
 having 5 cards so it will create a new object for the filtere objects and then it finfds out the diffrence between the two 
 objects and then it actually update the DOM.
+
+React is doing Efficient DOM Manipulation and thats the reason it is Fast
+Virtual Dom is Basically Those Tag and Elements.
