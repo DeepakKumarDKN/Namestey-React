@@ -1,0 +1,60 @@
+Monolyth and microservice architecture.
+---------------------------------------
+So first of all all the apps were being developed using Monolyth Architecture and what does it actually mean is earlier we used to have a
+big project and inside that project we used to have small peices of code 
+
+    for API, 
+    for Authentication, 
+    we also have uio code inside the same project 
+    we have database connectivity code inside the same project. 
+    we also have notification code inside the same project.
+
+so for example doing everything inside the same project.
+and in that if i want to do soome changes jusy say to change the color of the button so for that 
+we need to do a lot of work like deploying the whole big project, compiling the whole big project
+
+
+But in todays time the world is moving towards Microsoft Architecture.
+In Monolyth there is a single repositry and everybody used to work in that repositry 
+but in Microservices it is diffrent that mean we have different services for different job 
+and each of them work with their own independent service.
+
+we have a backend service 
+we have a ui service 
+we have a authentication service 
+we have a database service to maintain database 
+we have a service for email notifcation 
+
+and all these microservices doesn't have link with anyone 
+in microservices everything is separate i mean its individual
+i mean we have a separate backend serice, separate ui service
+separate authentication service for each and everything small thing 
+there is a diffrent project which is known as separation of concern
+
+and it is also known as Single Responsibility Principle where each and every 
+service has its own job
+
+In monolyth if we are creating an application using Java then we have to do everything using Java
+but in microservices architecture we can have UI written in React , we can have Backend written in Java
+we can Have Authentication written in Python 
+
+How do these services interact with each other 
+-----------------------------------------------
+So hows these services talk to each other i mean how the UI talk to Backend and 
+how the backend talk to Database Service.
+
+we can create microservices independently but how these are connected  
+the wat react is running on a specefic port similarly all thee services 
+can run on their own specefic port suppose on 
+
+    port 1234 : ui services 
+    port 2345 : authentication services 
+    port 6789 : backend services
+    port 3000 : email services
+
+and they interact with each other through UI Calls.
+
+```
+
+
+
