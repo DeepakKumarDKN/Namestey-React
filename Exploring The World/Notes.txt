@@ -1,3 +1,40 @@
+Hook is nothing just a normal Jaascript Function which is being given to us by React
+and it has its own specefic usecase. 
+
+useState is used to create state variable.
+
+useEffect: to use this one we have to import it just like we imported useState.
+useEffect takes two arguments 
+    1. arrow function which is a callback function 
+    2. dependency array 
+    
+    useEffect(()=> {}, [])
+
+So now the question is when we will call useEffect. we can call useEffect after the component render.
+so when we will write this one inside the component first after the component rendering is over as soon 
+as the redndering gets completed it will just quickly call the callback function(useEffect)
+
+Example:
+-------
+const body () => {
+    return (
+        <h1>Hello </h1>
+        useEffect(()=> {},[])
+        <h2>Hello Again
+    )
+}
+
+look at this peice of code first of all the component will render first that mean hello will be printed first 
+then when it wil come to line number 22 it will tell just wait let the component rendering gets over and then we will execute 
+so first hello will get printed then hello again will get printed and at last useEffect will get called so this is how the 
+useEffect gets executed. 
+
+it will execute at the end after the component execution gets over the useEffect will get called.
+
+
+
+useEffect is just like a nomal function and we will call this function with a callback and 
+
 Monolyth and microservice architecture.
 ---------------------------------------
 So first of all all the apps were being developed using Monolyth Architecture and what does it actually mean is earlier we used to have a
@@ -56,5 +93,20 @@ and they interact with each other through UI Calls.
 
 ```
 
+```
+How we can Fetch Data Dynamically From The Api. 
+-----------------------------------------------
+So there are Two Ways to Do it 
 
+    1. Load ----- Api ---- Render
+    2. Load ----- Render --- Api --- Render
 
+```
+
+as we know there are two ways to fetch data the second approach will be helpful while working with 
+useEffect.
+
+FetchData 
+---------
+Fetch is a super function which is given to us by browsers, its a super power which JS Engine have
+fetch will fetch data from the API 
