@@ -46,14 +46,14 @@ const Header = () => {
 }
 
 
-const ResturantCard = () => {
+const ResturantCard = (props) => {
     return (
         <div className="res-card">
             <ul class="card_list_items">
                 <li>
                     <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0984acc0ed7b914206dbbcb90297becc"/>
                     </li>
-                <li>Meghna Foods</li>
+                <li>{props.name}</li>
                 <li className="rating-box">
                     <img className="rating_image"src={star}></img>
                     Rating
@@ -72,10 +72,9 @@ const Body = () => {
                 Search
             </div>
             <div className="resturant_container">
-                <ResturantCard />
-                <ResturantCard />
-                <ResturantCard />
-                <ResturantCard />
+                <ResturantCard name = "Meghna Foods"/>
+                <ResturantCard name = "KFC " />
+               
             </div>
         </div>
     )

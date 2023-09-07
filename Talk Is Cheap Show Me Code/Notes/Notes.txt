@@ -46,7 +46,36 @@ How to wtite comments inside JSX
 
 Props
 -----
+* Props are the short form for properties, properies are something which we can pass to the component through props.
+* if i want to pass some data to the component we can pass it as props.
+* props are just normal argument to the function. 
+* passing some props to the component mean passing some argument to the function.
+
+
+- In the below component i have taken props and i can fetch it by writting {props.name}
+
 const RestaurantCard = (props) => {
+
+    what is there inside the props. So basically we are passing props to the component se below i have written it clearly
+    what react will do now react will take all these properties and what does i mean by properties 
+
+    ""
+    # these are the properties 
+
+    foodname="Pizza Hut" rating="4.1"                              
+    itemname="Fast Food, Pizzas" location="Netaji Nagar"
+
+    """
+
+    so now react will take all the properties and wrap it inside an object and it will pass over there as props 
+    inside the props an object is there which contain all those properties and thats the reason u can fetch it 
+    directly by writting 
+    
+        * {props.foodname}
+        * {props.rating}
+
+
+
     return(
         <div className='res_card'>
             <div className="card_one">
@@ -63,10 +92,11 @@ const RestaurantCard = (props) => {
     )
 }
 
+
 <div className="resturant_container">
     <RestaurantCard 
-    foodname="Pizza Hut" rating="4.1" 
-    itemname="Fast Food, Pizzas" location="Netaji Nagar" 
+    foodname="Pizza Hut" rating="4.1"                               --- here i am passing props to the ResturantCard Component.
+    itemname="Fast Food, Pizzas" location="Netaji Nagar"            --- here i am passing props to the Resturantcard Component. 
     imageLink="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7"/>
 </div>
 
@@ -86,7 +116,7 @@ const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
                 <p className="food_name">{foodname}</p>
                 <p className="rating">
                     <img className= "star" src={Star} />
-                    <p>{props.rating}</p>
+                    <p>{rating}</p>
                 </p>
                 <p className="items_name">{itemname}</p>
                 <p className="Location">{location}</p>
@@ -94,6 +124,9 @@ const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
         </div>
     )
 }
+
+Both the ways will work good and it is also being used but according to me i would perfer the 1st one 
+but i like the second one also .
 
 whenever a state variable update react re render the component 
 

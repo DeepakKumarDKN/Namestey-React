@@ -68,7 +68,6 @@
 .resturant_container{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .res-card{
@@ -79,7 +78,6 @@
 
 .res-card:hover{
     padding: 15px;
-    border: 1px solid black
 
 }
 .res-card img{
