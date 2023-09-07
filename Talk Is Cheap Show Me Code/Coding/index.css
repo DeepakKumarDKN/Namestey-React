@@ -17,263 +17,72 @@
     text-align: center;
 }
 .header{
+    position:fixed;
+    top:0;
+    right:0;
+    overflow: hidden;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 2rem;
-    padding: 10px 7rem;
+    padding: 8px 0px;
     box-shadow: 10px 0px 30px 5px rgb(208, 205, 205);
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+
     
 }
 .nav_items ul{
     list-style-type: none;
     display:flex;
-    gap: 2rem;
+    margin-right: 50px;
+    gap: 1rem;
+
     
 }
 .nav_items ul li{
     font-weight: 500;
+    
+}
+.logo_container{
+    display:flex;
+    align-items: center;
+}
+.logo_container h1{
+    font-size: 1.5rem;
 }
 .header .logo_container .logo{
     width: 60px;
+    margin-left: 50px;
 }
 
 .Body{
-    margin-bottom: 2rem;
-}
-.search_bar{
+    margin-top: 8rem;
     display:flex;
+    flex-direction: column;
     gap: 1rem;
-    margin-bottom: 2rem;
-
-}
-.search_bar input[type="text"]{
-    width: 50%;
-    padding: 10px;
-    font-size: 15px;
-}
-    
-.submit_button{
-    display:block;
-    padding: 10px 20px;
-    border:none;
-    font-size: 15px;
-}
-.submit_button:hover{
-    background-color: #ee8e09;
-    color: white;
 }
 
-/* offers-image -section */
-.best-offers-heading{
-    margin-bottom: 1.5rem;
-}
-
-.offers_image_containers{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.offers_image_one{
-    width:380px;
-}
-.offers_image_one img{
-    width: 100%;
-}
-
-.res-heading-online{
-    margin-top: 0rem;
-}
 
 .resturant_container{
     display:flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
-    gap: 1rem;
-}
-.top_res{
-    margin: 10px 0px;
-}
-
-
-
-.card_one{
-    width: 270px;
-    overflow: hidden;
-
-}
-
-.card_one:hover{
-    padding: 8px;
-    transition: all 0.30s
-}
-
-.image_one{
-   width: 100%;
-   height: 180px;
-   object-fit: cover;
-   border-radius: 20px;
-}
-.star{
-    background-color: green;
-    width: 12px;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-.rating{
-    display:flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 400;
-}
-.food_name{
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.items_name, 
-.Location{
-    color:rgb(162, 161, 161);
-    font-weight: 300;
-}
-
-.filter_section{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.filter_section .list_items li{
-    list-style-type: none;
-    border: 1px solid rgb(178, 175, 175);
-    padding:  5px 15px;
-    border-radius: 15px;
-    font-weight: 400;
-    color:rgb(51, 50, 50);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    cursor: pointer;
-    display:flex;
-    align-items: center;
-}
-
-.filter_section .list_items li:nth-child(1) p{
-   color:rgb(188, 179, 179);
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 300;
-   font-size: 15px;
-   color:rgb(51, 50, 50);
-}
-
-.filter_section .list_items li:nth-child(2) p{
-   color:rgb(188, 179, 179);
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 300;
-   font-size: 15px;
-   color:rgb(51, 50, 50);
-}
-
-.list_items .filter img{
-    width: 20px;
-    height: 20px;
-}
-
-.list_items .filter{
-    display:flex;
-    align-items: center;
-}
-
-.filter_section .list_items{
-    display:flex;
-    gap: 10px;
-}
-
-.sort_by{
-    display:flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.sort_by img{
-    width: 10px;
-    height: 10px;
-}
-
-/* download section starts */
-
-.app_download{
-    display: flex;
-    gap: 1rem;
-}
-
-.app_download img{
-    width: 200px;
-    height: 65px;
-}
-
-.download_component{
-    background-color: rgb(238, 237, 237);
-    padding: 1rem 0;
-    display:flex;
-    justify-content: space-evenly;
-}
-
-.download_heading{
-    color:rgb(22, 22, 22);
-    font-size: 1.5rem;
-    width: 34%;
-    font-weight: 700;
-}
-
-.footer_component{
-    background-color: black;
-    padding: 2rem 11rem 10rem 11rem;
-    display:flex;
     justify-content: space-between;
 }
-.footer_component p{
-    color:white;
+
+.res-card{
+    width: 250px;
+    height: 300px;
+    border: 1px solid red;
+    padding: 10px;
+}
+.res-card img{
+    width: 100%;
+    height:180px;
+    object-fit: cover;
 }
 
-.SwiggyLogo .Logo-container{
-    display:flex;
-    align-items: center;
-}
-
-
-.company_section ul li,
-.contact_section ul li,
-.deliverSection ul li{
-    color: rgb(212, 210, 210);
+.card_list_items{
     list-style-type: none;
-    font-weight: 300;
-    margin-bottom: 5px;
-}
-
-.company_section ul li:first-child,
-.contact_section ul li:first-child,
-.deliverSection ul li:first-child{
-
-    color:rgb(255, 255, 255);
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.top_resturants{
-   border:none;
-   padding: 5px;
-   background-color: rgb(238, 142, 6);
-   color:white;
-   border-radius: 20px;
-   cursor: pointer;
-    
-}
-
-.header-bar-restaurants{
-    display:flex;
-    justify-content: space-between;
-    margin: 1rem;
 }

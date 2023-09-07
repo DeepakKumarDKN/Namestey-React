@@ -106,6 +106,8 @@ So there are Two Ways to Do it
 as we know there are two ways to fetch data the second approach will be helpful while working with 
 useEffect.
 
+if we want to do something after rendering the component so we hae to 
+write it inside the useEffect.
 FetchData 
 ---------
 Fetch is a super function which is given to us by browsers, its a super power which JS Engine have

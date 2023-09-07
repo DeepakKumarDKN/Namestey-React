@@ -33,3 +33,17 @@ objects and then it actually update the DOM.
 
 React is doing Efficient DOM Manipulation and thats the reason it is Fast
 Virtual Dom is Basically Those Tag and Elements.
+
+Shimmer UI.
+-----------
+so a lttle amount iof time is being taken to load ghe complete webpage upto that we can show a loading spinner 
+or something else but is this a god way absolutely not this is not a good way. 
+
+so now a days a concept is being used called SHIMMER UI. so this is the latest standard practises 
+which is being used in industry. 
+
+It is just like loading the Fake Page untill we get the actual data from Api so insted of shwing this 
+Lading spinner we can show a fake page, a skeleton
+
+Lets Take an example of Swiggy Home Page if we click on load the page. Mean while we return the complete webpage with actual data, 
+swiggy is showing us the skeleton of that page with some fake cards and this was actually a mush use better expereince.
