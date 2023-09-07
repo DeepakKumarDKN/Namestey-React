@@ -86,3 +86,17 @@
 .card_list_items{
     list-style-type: none;
 }
+.rating-box >.rating_image{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 4px;
+   
+}
+.rating-box{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+}

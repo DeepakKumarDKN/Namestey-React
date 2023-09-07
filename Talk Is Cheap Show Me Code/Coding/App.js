@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
 import ResturantLogo from '../Coding/src/Images/ResturantLogo.jpg'
+import star from '../Coding/src/Images/star.png'
 
 
 
@@ -53,7 +54,10 @@ const ResturantCard = () => {
                     <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0984acc0ed7b914206dbbcb90297becc"/>
                     </li>
                 <li>Meghna Foods</li>
-                <li>Rating</li>
+                <li className="rating-box">
+                    <img className="rating_image"src={star}></img>
+                    Rating
+                </li>
                 <li>Cuisines</li>
                 <li>Place: Tollygunge</li>
             </ul>
