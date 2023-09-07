@@ -56,7 +56,7 @@ Props
 
 const RestaurantCard = (props) => {
 
-    what is there inside the props. So basically we are passing props to the component se below i have written it clearly
+    what is there inside the props. So basically we are passing props to the component see below i have written it clearly.
     what react will do now react will take all these properties and what does i mean by properties 
 
     ""
@@ -109,6 +109,18 @@ Note: due to destructuring it is not required to write props.location  we can ju
 
 
 const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
+
+    # {imageLink, foodname, rating, itemname, location} : i am doing the destructuring here but react is actually doing here
+
+const RestaurantCard = (props) => {
+    const {imageLink, foodname, rating, itemname, location} = props;
+
+}
+
+    const {imageLink, foodname, rating, itemname, location} = props;
+    # behind the scenes react is doing like this
+
+
     return(
         <div className='res_card'>
             <div className="card_one">

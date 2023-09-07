@@ -68,14 +68,27 @@
 .resturant_container{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 
 .res-card{
     width: 270px;
     height: 300px;
     padding: 10px;
+    gap: 1.2rem
 }
+.res-card .card_list_items li {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
 
+}
+.res-card .card_list_items {
+    display:flex;
+    flex-direction: column;
+    gap: 2px;
+}
 .res-card:hover{
     padding: 15px;
 
