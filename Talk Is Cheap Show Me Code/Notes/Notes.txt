@@ -213,3 +213,28 @@ style = {{ backgroundColor : 'red'}}
 - Look at this i am writtng it inside two curly braces: 
     1. it tells us that there is some javascript inside it .
     2. inside the second culy braces we are writting an javascript object.
+
+Note: 
+-----
+Mostly we will use TALWIND for styling.
+
+- This is not the way to render all the cards lets us learn about the Dynamic way to render our
+data into the cards and lets learn  how to create cards dynamically
+
+here we will talk about props 
+
+const Body = () => {
+    return (
+        <div className="Body maxWidth">
+            <div className="search_bar">
+                Search
+            </div>
+            <div className="resturant_container">
+                <ResturantCard />
+                <ResturantCard />
+                <ResturantCard />
+                <ResturantCard />
+            </div>
+        </div>
+    )
+}
