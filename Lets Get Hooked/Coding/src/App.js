@@ -1,29 +1,7 @@
 import React from 'react'
 import ReactDOM  from 'react-dom/client'
-import ResturantLogo from '../Coding/src/Images/ResturantLogo.jpg'
-import star from '../Coding/src/Images/star.png'
-
-
-
-/**
- * Header
- * - logo
- * - nav-items
- * Body
- * - Search
- * - Resturant Container
- * - Resturant Card
- *      - Image 
- *      - Name Of The Restaurant
- *      - rating
- *      - Star Rating
- *      - Cuisine 
- * Footer
- * - Copyight
- * - Links
- * - Address
- * - Contact Information
- */
+import ResturantLogo from './Images/ResturantLogo.jpg'
+import star from './Images/star.png'
 
 const resList = [
 {
