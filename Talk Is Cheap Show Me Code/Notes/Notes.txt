@@ -46,7 +46,8 @@ How to wtite comments inside JSX
 
 Props
 -----
-* Props are the short form for properties, properies are something which we can pass to the component through props.
+* Props are the short form for properties, properies are something which we can pass to the component if i want to dynamically 
+    pass some data to the component . But how i can pass it as props.
 * if i want to pass some data to the component we can pass it as props.
 * props are just normal argument to the function. 
 * passing some props to the component mean passing some argument to the function.
@@ -204,6 +205,7 @@ React.Fragment is comming from the react library, It is Like an Enpty Tag.
 
 Config Driven UI
 -----------------
+Our Website is driven by data this is known as config driven ui
 
 
 Diffrent ways of writting style 
