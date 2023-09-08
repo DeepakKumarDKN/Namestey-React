@@ -111,7 +111,9 @@ Note: due to destructuring it is not required to write props.location  we can ju
 
 const RestaurantCard = ({imageLink, foodname, rating, itemname, location}) => {
 
-    # {imageLink, foodname, rating, itemname, location} : i am doing the destructuring here but react is actually doing here
+    # {imageLink, foodname, rating, itemname, location} 
+    # i am doing the destructuring here but what react is doing it behind scenes 
+    # look the example below
 
 const RestaurantCard = (props) => {
     const {imageLink, foodname, rating, itemname, location} = props;
