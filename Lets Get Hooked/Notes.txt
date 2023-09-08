@@ -1,5 +1,4 @@
-React uses somehing called reconciliation Algorithim which is also known as 
-React Fibre
+React uses somehing called reconcilliation Algorithim which is also known as React Fibre
 
 Suppose i have a container and in that container i have like 15 cards but i want to filter it by which 
 i just want to filter 5 cards out of 15 cards
