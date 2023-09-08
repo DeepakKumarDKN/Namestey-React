@@ -61,10 +61,10 @@ package.json:-
 
 1. It is the core file of any project
 2. package.json is something we will get when we will bring npm to our project. 
-3. package.json keeps some meta data about our project like name, version, description , 
+3. package.json keeps some meta data about our project like name, version, description, 
 license information not only the meta data it also keep track of the the packages 
 we have installed in our project for example i have installed Parcel Bundler in our project. 
-4. so its keeps the data about what version of bundler we are using whether 
+so its keeps the data about what version of bundler we are using whether 
 we are using as normal dependency or as devDependency.
 
 5. it can be created by using npm init and as well as by writting it manually.
