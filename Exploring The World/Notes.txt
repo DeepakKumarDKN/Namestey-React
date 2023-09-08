@@ -91,9 +91,6 @@ can run on their own specefic port suppose on
 
 and they interact with each other through UI Calls.
 
-```
-
-```
 How we can Fetch Data Dynamically From The Api. 
 -----------------------------------------------
 So there are Two Ways to Do it 
@@ -101,7 +98,6 @@ So there are Two Ways to Do it
     1. Load ----- Api ---- Render
     2. Load ----- Render --- Api --- Render
 
-```
 
 as we know there are two ways to fetch data the second approach will be helpful while working with 
 useEffect.
