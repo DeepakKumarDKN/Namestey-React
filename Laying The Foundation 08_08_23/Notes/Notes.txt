@@ -1,4 +1,4 @@
-* Command to bring npm to our project : - npm init.
+* Command to bring npm to our project : - npm init
 * Command to bring npm to our project : - npm init
 * Doing npm init will bring us package.json to our project
 * There two type of dependency 
