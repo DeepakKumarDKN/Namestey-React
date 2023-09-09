@@ -132,3 +132,16 @@
     align-items: center;
     gap: 5px;
 }
+
+.button_container{
+    display:flex;
+    gap: 1rem;
+}
+.button_container .top_res{
+    font-size: 1rem;
+    padding: 5px;
+    border:none;
+    background-color: #eaa84d;                
+    color: white;
+
+}

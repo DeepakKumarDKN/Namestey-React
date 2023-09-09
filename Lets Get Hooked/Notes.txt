@@ -46,3 +46,38 @@ Lading spinner we can show a fake page, a skeleton
 
 Lets Take an example of Swiggy Home Page if we click on load the page. Mean while we return the complete webpage with actual data, 
 swiggy is showing us the skeleton of that page with some fake cards and this was actually a mush use better expereince.
+
+
+Two Ways of Exporting Data:
+---------------------------
+    - one is the default export 
+    - named export 
+
+example for default export 
+--------------------------
+    - in one file i can only have one default export. 
+    - module cannot have multiple default export 
+
+        export default fileOne  
+        export default fileTwo     this is wrong we cannot do that module will not allow to do it for multiple times.
+        export defaulr fileThree 
+    
+const Application = () => {
+    return (
+        <>
+         <p>Hello</p>
+        </>
+    )
+}
+
+export default Application 
+
+example for names export 
+------------------------
+    - named export is usually used when we want to do multiple export in a single file.
+    - if we are using named export then we need to import that inside curly braces for example 
+            import {export it here} from 'filename';
+    - in this project i have used named export for mockData.js (resList) so how can i do that. 
+            import { resList } from "../utils/mockData";
+
+export const CARD_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
