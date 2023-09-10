@@ -1,4 +1,4 @@
-React uses somehing called reconcilliation Algorithim which is also known as React Fibre
+React uses someting called reconcilliation Algorithim which is also known as React Fibre
 
 Suppose i have a container and in that container i have like 15 cards but i want to filter it by which 
 i just want to filter 5 cards out of 15 cards
@@ -26,8 +26,8 @@ This is also known as React Fibre which finds out the diffrence between updated 
 update the dom .
 
 Suppose i want to change filter out 5 cards and that too when i will do it . when i will click on the button 
-so as soon as i click on the button its creates a new object because preiously we are having 15 cards and now we are just 
-having 5 cards so it will create a new object for the filtere objects and then it finfds out the diffrence between the two 
+so as soon as i click on the button its creates a new object because previously we are having 15 cards and now we are just 
+having 5 cards so it will create a new object for the filtered objects and then it finds out the diffrence between the two 
 objects and then it actually update the DOM.
 
 React is doing Efficient DOM Manipulation and thats the reason it is Fast
@@ -35,7 +35,7 @@ Virtual Dom is Basically Those Tag and Elements.
 
 Shimmer UI.
 -----------
-so a lttle amount iof time is being taken to load ghe complete webpage upto that we can show a loading spinner 
+so a lttle amount if time is being taken to load the complete webpage upto that we can show a loading spinner 
 or something else but is this a god way absolutely not this is not a good way. 
 
 so now a days a concept is being used called SHIMMER UI. so this is the latest standard practises 
@@ -72,7 +72,7 @@ const Application = () => {
 
 export default Application 
 
-example for names export 
+example for named export 
 ------------------------
     - named export is usually used when we want to do multiple export in a single file.
     - if we are using named export then we need to import that inside curly braces for example 
@@ -81,3 +81,15 @@ example for names export
             import { resList } from "../utils/mockData";
 
 export const CARD_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
+
+useState
+---------
+let [listofResturants] = useState() is exacttly equal to 
+let listofResturants;
+
+React will keep my UI insink with Data Layer as soon as my Data Layer Update our UI will Update and how it is getting update 
+by re-rendering so behind the scene what is happening is as soon as i will update my state variable React will re-render my 
+component.
+
+React is very Good at DOM Operation and thats is why React is very Fast. In this example as soon as i click on Top Resturant Button 
+(State Variable) React will automatically change its component and it does it very Fast It keep my Data Layer in sink with the UI layar
