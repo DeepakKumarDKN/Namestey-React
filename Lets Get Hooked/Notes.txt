@@ -93,3 +93,20 @@ component.
 
 React is very Good at DOM Operation and thats is why React is very Fast. In this example as soon as i click on Top Resturant Button 
 (State Variable) React will automatically change its component and it does it very Fast It keep my Data Layer in sink with the UI layar
+
+React has Diff Algorithim which is very efficient it can do efficient DOM Manipulation in simple words it can do fast DOM Manipulation.
+React is also fast because it contain Virtual Dom.
+
+
+
+let [ListofResturants, setListofResturants] = useState(resList)
+# This is actually called array destructuring.
+
+const array = useState(resList)
+
+let [ListofResturants, setListofResturants] = array
+
+let ListofResturants = array[0] 
+let setListofResturants = array[1]
+
+

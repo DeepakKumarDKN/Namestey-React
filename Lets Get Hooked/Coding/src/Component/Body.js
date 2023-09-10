@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { resList } from "../utils/mockData";
-import ResturantCard from "./ResturantCard";
+import ResturantCard from "./ResturantCard";wh
 const Body = () => {
     //state variable - Super powerful variable 
 
