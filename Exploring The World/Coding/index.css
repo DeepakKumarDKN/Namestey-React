@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Poppins';
+    background-color: #fffefe;
+    color:rgb(12, 12, 12);
+    margin:0;
+    padding:0;
+
+}
+
+.maxWidth{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.heading{
+    text-align: center;
+}
+.header{
+    position:fixed;
+    top:0;
+    right:0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 8px 0px;
+    box-shadow: 10px 0px 30px 5px rgb(208, 205, 205);
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+.nav_items ul{
+    list-style-type: none;
+    display:flex;
+    margin-right: 50px;
+    gap: 1rem;
+
+    
+}
+.nav_items ul li{
+    font-weight: 500;
+    
+}
+.logo_container{
+    display:flex;
+    align-items: center;
+}
+.logo_container h1{
+    font-size: 1.5rem;
+}
+.header .logo_container .logo{
+    width: 60px;
+    margin-left: 50px;
+}
+
+.Body{
+    margin-top: 8rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.resturant_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.res-card{
+    width: 270px;
+    height: 300px;
+    padding: 10px;
+    gap: 1.2rem
+}
+.res-card .card_list_items li {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+
+}
+
+.res-card .card_list_items >:nth-child(2){
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+.res-card .card_list_items >:nth-child(4),
+.res-card .card_list_items >:nth-child(5){
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    color: #3b3a3a;
+    
+}
+.res-card .card_list_items {
+    display:flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.res-card:hover{
+    padding: 15px;
+
+}
+.res-card img{
+    width: 100%;
+    height:180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card_list_items{
+    list-style-type: none;
+}
+.rating-box >.rating_image{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    padding: 4px;
+   
+}
+.rating-box{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button_container{
+    display:flex;
+    gap: 1rem;
+}
+.button_container .top_res{
+    font-size: 1rem;
+    padding: 5px;
+    border:none;
+    background-color: #eaa84d;                
+    color: white;
+
+}
