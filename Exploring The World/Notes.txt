@@ -102,8 +102,13 @@ How we can Fetch Data Dynamically From The Api.
 So there are Two Ways to Do it 
 
     1. Load ----- Api ---- Render
-    2. Load ----- Render --- Api --- Render
+    # as soon as the page load we can make an API Call wait for the data to come and then we can render the UI.
+    # we have seen it alot of time. take the example of swiggy website here as soon as in enter the webpage
+    # fraction of seconds i cannot see any thing but as soon as the API Respong it quickly render out eerything.
 
+    2. Load ----- Render --- Api --- Render
+    # as soon as the page load we will render it, as soon as we render i we will make an API Call after getting the 
+    # result back from API we will render our aplication once again with the data from the UI
 
 as we know there are two ways to fetch data the second approach will be helpful while working with 
 useEffect.

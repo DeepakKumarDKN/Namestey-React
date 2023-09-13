@@ -11,7 +11,7 @@ const ResturantCard = (props) => {
         <div className="res-card">
             <ul className="card_list_items">
                 <li>
-                    <img src= {CARD_URL + cloudinaryImageId }/>
+                    <img src= {CARD_URL + cloudinaryImageId}/>
                     </li>
                 <li>{name}</li>
                 <li className="rating-box">
