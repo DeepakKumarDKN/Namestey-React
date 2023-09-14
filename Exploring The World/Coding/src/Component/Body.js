@@ -35,8 +35,12 @@ let [searchValue, setsearchValue] = useState("")
         <div className="Body maxWidth">
             <div className="button_container">
                 <div className="search_bar">
-                    <input type="text" placeholder="Search" value = {searchValue} />
-                    <button className="submit_button" onChange={()=> {}}>Submit</button>
+                    <input type="text" 
+                        placeholder="Search"
+                        value = {searchValue} 
+                        onChange={(e)=>{setsearchValue(e.target.value)}} 
+                    />
+                    <button className="submit_button">Submit</button>
                 </div>
                 <div>
                     <button className="top_res" onClick={() => {

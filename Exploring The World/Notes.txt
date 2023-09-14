@@ -119,3 +119,24 @@ FetchData
 ---------
 Fetch is a super function which is given to us by browsers, its a super power which JS Engine have
 fetch will fetch data from the API 
+
+
+Note:
+----
+I want to change the state variable using setbtnName from Login to Logout.
+
+const [btnName, setbtnName] = useState('Login')
+
+
+so Whenever the state variable will change using setbtnName react will re render the component
+and all the values will get updated .. so basically it is refreshing the component, here it is 
+triggering the reconcillation fibre.
+
+rendering a component mean calling a component.
+
+here i am modifying a constant variable as per the rules of he javascript if we are declaes using 
+const then we cannot do the modification but here we can do it because when we are using setbtnName
+to do the UI Updation React is basically updating the btnName value by calling the component once again 
+so it is basically calling the component but this time btnName is the new variable then it was before 
+
+so setbtnName is necesseary to do the UI Updation without using setbtnName we cannot do the updation. 
