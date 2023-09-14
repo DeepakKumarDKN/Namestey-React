@@ -149,6 +149,8 @@
 }
 .search_bar > input[type="text"]{
     padding: 5px;
+    width: 300px;
+
 }
 .button_container .top_res{
     font-size: 1rem;
