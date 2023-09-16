@@ -11,13 +11,13 @@ useEffect(()=> {},[])
 
 when is useEffect is called:
 ----------------------------
-useEffect is callled everythime my component render.
+useEffect is callled everytime my component render.
 callback function is mandatory inside the useEffect but 
 array dependency is not mandatory.
 
-- if no dependency arrayuseEffect is called on every render.
+- if no dependency array useEffect is called on every render.
 - if there is an empty dependency [] : useEffect will be called only on initial rendering(just once)
-when the  component will render fopr thr first time.
+when the  component will render for the first time.
 
 - if there is a dependency array for example (here i am pointing out to btnReact as a dependency aray) 
 everytime when useEffect will🎓 btnReact will get updated.
