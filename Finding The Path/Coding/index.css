@@ -41,8 +41,6 @@
     gap: 1rem;
     align-items: center;
    
-
-    
 }
 .login_logout{
    border: 1px solid black;
@@ -53,7 +51,12 @@
     cursor: pointer;
     
 }
-.nav_items ul li:hover{
+.nav_items ul li a{
+    text-decoration: none;
+    color: #000000dd
+
+}
+.nav_items ul li a:hover{
     background-color: #ee900b;
     padding: 3px 8px;
     color:white;
@@ -251,4 +254,9 @@
 /* Error Page Design */
 .error_page h2{
     margin-top: 90px;
+}
+
+/* contact Page Stylng Starts */
+.contact_container{
+    margin-top: 100px;
 }

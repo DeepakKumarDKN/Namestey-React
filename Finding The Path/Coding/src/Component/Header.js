@@ -18,9 +18,9 @@ const Header = () => {
             </div>
             <div className='nav_items'>
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                     <li>Cart</li>
                     <button className="login_logout" 
                     onClick={()=> {
