@@ -35,7 +35,7 @@ let [searchValue, setsearchValue] = useState("")
 
     }
 
-    const filteredData = async () => {queueMicrotask
+    const filteredData = async () => {
         const filterdata = await fetch (API_LINK)
         const jsondata = await filterdata.json()
 
@@ -65,7 +65,7 @@ let [searchValue, setsearchValue] = useState("")
                 <div>
                     <button className="top_res" onClick={() => {
                   // filter logic here
-                    setfilteredResturants(ListofResturants.filter((res) => res.info.avgRating > 4.6))
+                    setfilteredResturants(ListofResturants.filter((res) => res.info.avgRating >= 4.6))
                     }}
                     >Top Resturants</button>
                 </div>

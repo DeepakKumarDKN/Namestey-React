@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&family=Roboto:wght@100&display=swap');
 
 *{
     font-family: 'Poppins';
@@ -40,6 +40,7 @@
     margin-right: 50px;
     gap: 1rem;
     align-items: center;
+   
 
     
 }
@@ -49,6 +50,15 @@
 }
 .nav_items ul li{
     font-weight: 500;
+    cursor: pointer;
+    
+}
+.nav_items ul li:hover{
+    background-color: #ee900b;
+    padding: 3px 8px;
+    color:white;
+    transition: all 1s ease-out;
+    border-radius: 5px;
     
 }
 .logo_container{
@@ -211,4 +221,34 @@
     width: 40%;
     height: 12px;
     background-color: rgb(240, 236, 236);
+}
+
+.about_container{
+    margin-top: 160px;
+}
+.about_page{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_image_container{
+    width: 600px;
+}
+.about_image_container img{
+    width: 100%;
+}
+.about_page_heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.about_page_subheading{
+    font-size: 5rem;
+    font-weight: 800;
+    color:#ee900b;
+    margin-top: -1.5rem;
+}
+
+/* Error Page Design */
+.error_page h2{
+    margin-top: 90px;
 }

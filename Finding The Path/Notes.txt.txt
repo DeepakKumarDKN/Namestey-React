@@ -11,17 +11,29 @@ useEffect(()=> {},[])
 
 when is useEffect is called:
 ----------------------------
-useEffect is callled everytime my component render.
+useEffect is called everytime my component render.
 callback function is mandatory inside the useEffect but 
 array dependency is not mandatory.
 
 - if no dependency array useEffect is called on every render.
+
 - if there is an empty dependency [] : useEffect will be called only on initial rendering(just once)
 when the  component will render for the first time.
 
 - if there is a dependency array for example (here i am pointing out to btnReact as a dependency aray) 
-everytime when useEffect will🎓 btnReact will get updated.
+so in that case useEffect will be called everytime when the btnReact will get updated.
+
+- when the dependency changes then only it will be called.
 
 useEffect(()=> {
     console.log('use effect called)
 },[btnReact])
+
+React-Router-Dom/Router.
+-----------------------
+configuration: configuration mean some information which will define what will
+happen inside a particular route / specefic route / path, what will happen if we call that particular path.
+
+
+Bowser Router takes a list of path. 
+Path is nothing but an Object.
