@@ -10,9 +10,9 @@ import Shimmer from "../utils/Shimmer";
 
 const Body = () => {
     
-let [ListofResturants, setListofResturants] = useState([])
+const [ListofResturants, setListofResturants] = useState([])
 const [filteredResturants, setfilteredResturants] = useState([])
-let [searchValue, setsearchValue] = useState("")
+const [searchValue, setsearchValue] = useState("")
     
     useEffect(()=>{
         fetchData(),

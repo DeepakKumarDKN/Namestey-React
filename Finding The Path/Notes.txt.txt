@@ -25,6 +25,9 @@ so in that case useEffect will be called everytime when the btnReact will get up
 
 - when the dependency changes then only it will be called.
 
+- so usually we dont have to called the API again and again so thats why i will use an empty dependency so that it will be called 
+only once that means when we will render it for the first time then only it will get called.
+
 useEffect(()=> {
     console.log('use effect called)
 },[btnReact])
@@ -37,3 +40,34 @@ happen inside a particular route / specefic route / path, what will happen if we
 
 Bowser Router takes a list of path. 
 Path is nothing but an Object.
+
+Link:
+----
+import {Link} from 'react-router-dom';
+
+never ever used href in react, just use Link
+<Link to="/">Home</Link>
+
+Because anchor tag will reload the whole page while Link will only refresh and that is why our application are known as 
+single page application because its just changing the components not realoading the whole page. I f i want to go from 
+Home Page to Contact Page then there also refreshing is being done.
+
+Routing in Webapps
+---------------------
+There are two types of routing we can have in our application:
+---------------------------------------------------------------
+Client side routing and server side routing.
+
+- Client Side Routing.
+----------------------
+here it will reload the whole page send the network call to that particular page fetches that HTML and
+render  it into the webpage.
+
+Realod the page change the component and then render it into the webpage.
+
+- Server site Routing 
+--------------------
+make the network call gets the data from the network of that particular page renders it into the UI/Webpage 
+and refreshes the whole page.
+
+making a network call to about.html page for exmple and that page (About.html) is comming from server.
