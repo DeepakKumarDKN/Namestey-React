@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import { menu_api } from '../utils/linkFile';
 import Shimmer from '../utils/Shimmer';
 import green_star from '../Images/green_star.png'
+import { axis_logo } from '../utils/linkFile';
 
 
 const ResaurantMenu = ()=>{
@@ -12,33 +13,39 @@ const ResaurantMenu = ()=>{
     },[])
 
     const fetchMenu = async() =>{; 
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.4717414&lng=88.3454871&restaurantId=86011&catalog_qa=undefined&submitAction=ENTER");
+        const data = await fetch(menu_api);
         const json = await data.json();
         console.log(json)
-        setResInfo(json.data)
+        setResInfo(json.data);
+        
     };
-
-    const {name} = resInfo?.cards[0]?.
     
+    if(resInfo === null){
+        return <Shimmer />
+    }
+    const {name, cuisines, areaName, avgRating, totalRatingsString} = resInfo?.cards[0]?.card?.card?.info
     
-    
-
-    return resInfo === null ? <Shimmer/> :(
+    return (
         <div className="resturant_info_maxWidth">
+
             <div className="resturant-info">
                 <div className="food_info">
-                    <p>Name</p>
-                    <p>Cuisines</p>
-                    <p>area name</p>
+                    <p>{name}</p>
+                    <p>{cuisines.join(", ")}</p>
+                    <p>{areaName}</p>
                 </div>
                 <div className="ratings_container">
                     <div className="food_rating">
                         <img src={green_star}></img>
-                        <p>avgRating</p>
+                        <p>{avgRating}</p>
                     </div>
                     <div></div>
-                    <p>1k + ratings</p>
+                    <p>{totalRatingsString}</p>
                 </div>
+            </div>
+
+            <div className="offers_container">
+
             </div>
         </div>
     )
