@@ -2,20 +2,23 @@ import {useEffect, useState} from 'react'
 import { bank_image_url, menuImageId, menu_api } from '../utils/linkFile';
 import Shimmer from '../utils/Shimmer';
 import green_star from '../Images/green_star.png'
-import { axis_logo } from '../utils/linkFile';
+import {useParams} from 'react-router-dom'
 
 
 
 
 const ResaurantMenu = ()=>{
     const [resInfo, setResInfo] = useState(null)
+    const [menuItems, setMenuItems] = useState([])
+    const {resId} = useParams()
+
 
     useEffect(()=>{
      fetchMenu();   
     },[])
 
     const fetchMenu = async() =>{; 
-        const data = await fetch(menu_api);
+        const data = await fetch(menu_api + resId);
         const json = await data.json();
         console.log(json)
         setResInfo(json.data);
@@ -27,9 +30,6 @@ const ResaurantMenu = ()=>{
     const {name, cuisines,areaName, avgRating, totalRatingsString}  = resInfo?.cards[0]?.card?.card?.info
     const {offers} = resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle
     const {itemCards,title} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
-    
-    
-    
 
     return (
         <div className="resturant_info_maxWidth">
@@ -85,9 +85,7 @@ const ResaurantMenu = ()=>{
                 </div>
             </div>
 
-            <div className="Savouries_Container">
-                <p className="title">Savouries</p>
-            </div>
+            
         </div>
     )
 }

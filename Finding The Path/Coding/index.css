@@ -365,6 +365,7 @@ offer container styling starts */
 }
 .offer_box>:nth-child(2){
     color:grey;
+    font-size: 12px;
 }
 .offers_container{
     margin-top: 2rem;
