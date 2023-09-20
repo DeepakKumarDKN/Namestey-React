@@ -1,8 +1,10 @@
 import {useEffect, useState} from 'react'
-import { menu_api } from '../utils/linkFile';
+import { bank_image_url, menuImageId, menu_api } from '../utils/linkFile';
 import Shimmer from '../utils/Shimmer';
 import green_star from '../Images/green_star.png'
 import { axis_logo } from '../utils/linkFile';
+
+
 
 
 const ResaurantMenu = ()=>{
@@ -19,12 +21,16 @@ const ResaurantMenu = ()=>{
         setResInfo(json.data);
         
     };
+     if (resInfo === null) return  <Shimmer />           
+       
     
-    if(resInfo === null){
-        return <Shimmer />
-    }
-    const {name, cuisines, areaName, avgRating, totalRatingsString} = resInfo?.cards[0]?.card?.card?.info
+    const {name, cuisines,areaName, avgRating, totalRatingsString}  = resInfo?.cards[0]?.card?.card?.info
+    const {offers} = resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+    const {itemCards,title} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
     
+    
+    
+
     return (
         <div className="resturant_info_maxWidth">
 
@@ -45,7 +51,42 @@ const ResaurantMenu = ()=>{
             </div>
 
             <div className="offers_container">
+                {
+                    offers.map((offer)=>(
+                        <div className="offer_box" key = {offer?.info.header}>
+                            <p>{<img src={bank_image_url + offer?.info?.offerLogo}></img>} {offer?.info?.header}</p>
+                            <p>{offer?.info?.couponCode} | {offer?.info?.description}</p>
+                        </div>
+                    ))
+                }
+            </div>
 
+            <div className="Combos_container">
+                <p className="title">{title}({itemCards.length})</p>
+                <div className="combos_menu">
+                    {
+                        itemCards.map((item)=>(
+                            <div className="combos_data" key={item?.card?.info?.id}>
+                                <div className="combo_food_data">
+                                    <div className="name_price_container">
+                                        <p>{item?.card?.info?.name}</p>
+                                        <p>Rs {item?.card?.info?.price/100}</p>
+                                        <p>{item?.card?.info?.description}</p>
+                                    </div>
+
+                                    <div className="image_Secttion">
+                                        {<img src={menuImageId + item?.card?.info?.imageId}></img>}
+                                        <div>ADD</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div className="Savouries_Container">
+                <p className="title">Savouries</p>
             </div>
         </div>
     )
