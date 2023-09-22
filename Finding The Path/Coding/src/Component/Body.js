@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import ResturantCard from "./ResturantCard";
 import { API_LINK } from "../utils/linkFile";
 import Shimmer from "../utils/Shimmer";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -73,8 +75,8 @@ const [searchValue, setsearchValue] = useState("")
             <div className="resturant_container">
                 {
                     filteredResturants.map((resturant)=>(
-                        <ResturantCard key = {resturant?.info?.id}
-                        resData = {resturant}/>
+                        <Link to={"/restaurants/" + resturant?.info?.id} key = {resturant?.info?.id} style={{textDecoration: 'none'}}>
+                            <ResturantCard resData = {resturant}/></Link>
                     ))
                 }   
             </div>

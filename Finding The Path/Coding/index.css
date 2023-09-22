@@ -102,8 +102,9 @@
     text-overflow: ellipsis;
     overflow: hidden; 
     white-space: nowrap;
-
+    
 }
+
 
 .res-card .card_list_items >:nth-child(2){
     font-family: Poppins;
@@ -381,67 +382,3 @@ offer container styling starts */
 
 
 /* combo section design starts */
-.Combos_container .title{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.combo_food_data{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid grey;
-    margin-bottom: 1.5rem;
-}
-
-.combo_food_data>:nth-child(3){
-    height: 1px;
-    background-color: grey;
-}
-.combo_food_data>:nth-child(1) p{
-   display: flex;
-   flex-direction: column;
-}
-.combo_food_data .name_price_container{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.image_Secttion img{
-    width: 180px;
-    height: 120px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.image_Secttion>:nth-child(2){
-    position: relative;
-    top: -20px;
-    border: 1px solid green;
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    background-color: white;
-    color: green;
-    border-radius: 5px;
-    padding: 5px 0px;
-    box-shadow: 1px 1px 10px 3px rgb(236, 233, 233);
-
-}
-
-.name_price_container>:nth-child(3){
-    margin-top: 1rem;
-    font-size: 14px;
-    font-weight: 200;
-    color:#5f5e5d
-}
-.name_price_container>:nth-child(1){
-    font-weight: 600;
-    color:#161515
-}
-.name_price_container>:nth-child(2){
-    font-weight: 300;
-    color:#161515;
-    font-size: 14px;
-}

@@ -9,7 +9,6 @@ import {useParams} from 'react-router-dom'
 
 const ResaurantMenu = ()=>{
     const [resInfo, setResInfo] = useState(null)
-    const [menuItems, setMenuItems] = useState([])
     const {resId} = useParams()
 
 
@@ -29,7 +28,9 @@ const ResaurantMenu = ()=>{
     
     const {name, cuisines,areaName, avgRating, totalRatingsString}  = resInfo?.cards[0]?.card?.card?.info
     const {offers} = resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-    const {itemCards,title} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
+   
+
+   
 
     return (
         <div className="resturant_info_maxWidth">
@@ -61,29 +62,9 @@ const ResaurantMenu = ()=>{
                 }
             </div>
 
-            <div className="Combos_container">
-                <p className="title">{title}({itemCards.length})</p>
-                <div className="combos_menu">
-                    {
-                        itemCards.map((item)=>(
-                            <div className="combos_data" key={item?.card?.info?.id}>
-                                <div className="combo_food_data">
-                                    <div className="name_price_container">
-                                        <p>{item?.card?.info?.name}</p>
-                                        <p>Rs {item?.card?.info?.price/100}</p>
-                                        <p>{item?.card?.info?.description}</p>
-                                    </div>
-
-                                    <div className="image_Secttion">
-                                        {<img src={menuImageId + item?.card?.info?.imageId}></img>}
-                                        <div>ADD</div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+           <div className="Menu_items">
+                
+           </div>
 
             
         </div>
