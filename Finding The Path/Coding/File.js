@@ -22,12 +22,40 @@ console.log(arrayOne)
 const marvel_heroes = ['thor','Ironman','spiderMan']
 const ramayanHeros = ['ram','laxman','hanuman','narayan']
 
-marvel_heroes.push(ramayanHeros)
+//marvel_heroes.push(ramayanHeros)
 //console.log(marvel_heroes)
-const allHeros = [...marvel_heroes, ...ramayanHeros]
+//const allHeros = [...marvel_heroes, ...ramayanHeros]
 //console.log(Array.from('Hitesh')) 
 //console.log(Array.isArray(allHeros))     
 
+
                                                                                                                                                                                                                                    
 
+const addNumbers = function(a,b){
+    return a+b 
+}
 
+//console.log(addNumbers(10,20))
+
+let a;
+if(true){
+    a =  20 
+    let b = 20;
+}
+
+//console.log(a)
+
+function One(){
+    const userName = "deepak"
+
+    function Two(){
+        const fullName = "deepak kumar nayak"
+        console.log(userName)
+        console.log(fullName)
+        
+    }
+    // console.log('Accesing from Outer',userName)
+}
+// One()
+
+console.log(this)
