@@ -58,4 +58,40 @@ function One(){
 }
 // One()
 
-console.log(this)
+//console.log(this)
+
+// functions 
+
+// function Declaration
+
+function FindIndex(num,target){
+    for(let i of num){
+        if (i === target){
+            //console.log(num.indexOf(i))
+        }
+    }
+}
+FindIndex([10,20,30,40,50], 20)
+ 
+//functions Expression 
+
+const FindIndexof = function(num, target){
+    for(let i=0; i<=num.length; i++){
+        if(num[i] === target){
+            return i
+        }
+    }
+}
+console.log(FindIndexof([10,20,30,40], 20))
+
+// Arrow Functions
+
+const findTheIndexOf = (num,target)=>{
+    for(let i=0; i<=num.length; i++){
+        if(num[i] === target){
+            return i
+        }
+    }
+}
+
+console.log(findTheIndexOf([10,20,30,40],30))

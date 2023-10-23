@@ -68,7 +68,7 @@ Benefits Of Uisng CDN:
 -------------------------
 1. Improving Website Load Times.
 2. Reducing Bandwith Costs.
-3. Increasing Content Aailability and redudancy.
+3. Increasing Content Availability and redudancy.
 4. Improving Website Security. 
 
 Follow This Link For More Info: 
